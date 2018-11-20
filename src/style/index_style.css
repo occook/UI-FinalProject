@@ -2,3 +2,12 @@
   background: unset;
   background-image: url("../images/BeachView.png");
 }
+
+span.clear{
+  clear: left;
+  display: block;
+}
+
+.left{
+  float: left;
+}
