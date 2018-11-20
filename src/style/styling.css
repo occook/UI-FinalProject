@@ -6,16 +6,6 @@ body{
     font-family: "Arial";
 }
 
-div{
-    background: rgb(165, 165, 165);
-    float: left;
-    border: 2px solid black;
-    border-radius: 7px;
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-}
-
 form{
     display: block;
     float: none;
