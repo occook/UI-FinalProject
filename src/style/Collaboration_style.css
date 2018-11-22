@@ -1,0 +1,28 @@
+body{
+    display: inline-block;
+}
+
+#page_trail{
+    font-family: "Arial";
+    font-size: 17px;
+    text-align: left;
+    text-indent: 30px;
+}
+
+#logo_circle{
+    height: 80px;
+    width: 80px;
+    background-color:black;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+#page_title{
+    font-family: "Optima";
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-left:50%;
+    background: red;
+}
