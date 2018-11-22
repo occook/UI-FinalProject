@@ -1,0 +1,12 @@
+body{
+    background: lightgray;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Arial";
+}
+
+form{
+    display: block;
+    float: none;
+}

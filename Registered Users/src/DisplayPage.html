@@ -1,0 +1,113 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style/styling.css">
+<link rel="stylesheet" href="style/displayedstyle.css">
+<title> Display Page </title>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!---THE HEADER HAS THE LOGO, THE PAGE TRAIL, AND THE PAGE'S TITLE-->
+    <div id="logo_circle"></div>
+    <br>
+    <br>
+    <div id="page_trail"><href>Home</href> > <href>Search Hotels</href> > <href>Hotels</href></div>
+    <div id="page_title">HOTELS</div>
+
+
+    <!--THERE ARE 2 DIV OBJECTS, EACH REPRESENTING A HOTEL RECOMMENDATION,
+    THE OBJECTS INSIDE OF THIS ARE DISPLAYED FROM TOP TO BOTTOM-->
+    <div id="object_displayed">
+        <!--THE HOTEL IMAGE ON THE LEFT-->
+        <img src ="images/westin.jpg" alt="Westin Hotel" id="image_displayed">
+        <!--THE HOTEL COST ON THE RIGHT-->
+        <div id="object_cost">$100/night</div>
+        <!--THE HOTEL TITLE AND ADDRESS IN THE CENTER-->
+        <div id="object_title">Westin Palace Hotel</div>
+        <div id="object_address">Plaza de las Cortes, 7, 28014 Madrid, Spain</div>
+        <!--THE HOTEL RATING ON THE RIGHT-->
+        <img src="images/four_half_stars.png" alt="Rating" id="star">
+        <br>
+        <!--THE KEYWORDS AND DESCRIPTION ARE IN THE MIDDLE OF THE BOX-->
+        <div id="object_keywords_description"><b>Keywords: </b>Location, Family, Beautiful</div>
+        <br>
+        <div id="object_keywords_description"><b>Description: </b>
+            Commissioned by King Alfonso XIII in 1912, the iconic hotel The Westin Palace, Madrid is located in the renowned Art Walk. This area links the city’s most enriching museums, El Prado, Reina Sofía and Thyssen-Bornemisza ...</div>
+        <br>
+
+        <!--AT THE BOTTOM OF EACH BOX, THERE IS A BUTTON TO SHOW COMMENTS/RATINGS
+        FROM OTHER CUSTOMERS. WHEN THE USER CLICKS ON THIS BOX, A MODAL APPEARS WITH RECENT RATINGS AND COMMENTS.-->
+        <div class="object_comments" id="Westin" onclick="showModal(this.id)">Click Here to Display Recent Customer's Ratings/Comments</div>
+        <div id="WestinModal" class="modal">
+            <!--BELOW IS THE CONTENT OF THE MODAL-->
+            <div class = "modal-content">
+                <span class="object_comments_close" id="WestinClose">&times;</span>
+                <img src="images/westin.jpg" id="modal_photo">
+                <div id="modal_name">Westin Palace Hotel Reviews</div>
+                <br>
+                <br>
+                <br>
+                <img src="images/four_stars.png" alt="Rating" id="comments_reviews">
+                <p>Beautiful hotel right next to the best museums in Madrid. I loved the restaurant and the staff.</p>
+                <hr>
+                <img src="images/five_stars.png" alt="Rating" id="comments_reviews">
+                <p>The best hotel I've ever stayed at by far!</p>
+                <hr>
+                <img src="images/three_stars.png" alt="Rating" id="comments_reviews">
+                <p>The hotel was beautiful but the bed was extremely uncomfortable.</p>
+                <hr>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="object_displayed">
+        <!--THE HOTEL IMAGE ON THE LEFT-->
+        <img src = "images/mercure.jpg" alt="Mercure Santo Domingo" id="image_displayed">
+        <!--THE HOTEL COST ON THE RIGHT-->
+        <div id="object_cost">$80/night</div>
+        <!--THE HOTEL TITLE AND ADDRESS IN THE CENTER-->
+        <div id="object_title">The Mercure Hotel Santo Domingo</div>
+        <div id="object_address">San Bernardo, 1 28013 Madrid, Spain</div>
+        <!--THE HOTEL RATING ON THE RIGHT-->
+        <img src="images/three_stars.png" alt="Rating" id="star">
+        <br>
+        <!--THE KEYWORDS AND DESCRIPTION ARE IN THE MIDDLE OF THE BOX-->
+        <div id="object_keywords_description"><b>Keywords: </b>Modern, Family</div>
+        <br>
+        <div id="object_keywords_description"><b>Description: </b>
+            The hotel is located in Madrid city center, just a short distance from the most emblematic sites and tourist attractions. Amazing Hotel with terrace on the roof top of the building and a swimming pool open from June to September ...</div>
+        <br>
+
+        <!--AT THE BOTTOM OF EACH BOX, THERE IS A BUTTON TO SHOW COMMENTS/RATINGS
+        FROM OTHER CUSTOMERS. WHEN THE USER CLICKS ON THIS BOX, A MODAL APPEARS WITH RECENT RATINGS AND COMMENTS.-->
+        <div class="object_comments" id="Mercure" onclick="showModal(this.id)">Click Here to Display Recent Customer's Ratings/Comments</div>
+        <div id="MercureModal" class="modal">
+            <!--BELOW IS THE CONTENT OF THE MODAL-->
+            <div class = "modal-content">
+                <span class="object_comments_close" id="MercureClose">&times;</span>
+                <img src="images/mercure.jpg" id="modal_photo">
+                <div id="modal_name">Mercure Hotel Santo Domingo Reviews</div>
+                <br>
+                <br>
+                <br>
+                <img src="images/four_stars.png" alt="Rating" id="comments_reviews">
+                <p>Beautiful hotel in a great location for the fun city center.</p>
+                <hr>
+                <img src="images/two_half_stars.png" alt="Rating" id="comments_reviews">
+                <p>The staff was very unhelpful and did not speak any English.</p>
+                <hr>
+                <img src="images/three_stars.png" alt="Rating" id="comments_reviews">
+                <p>The hotel was beautiful but I did not like the location.</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+<!--THE ATTACHED JAVA SCRIPT FILE-->
+<script src="displayed_script.js"></script>
+
+</body>
+</html>
