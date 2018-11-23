@@ -5,6 +5,17 @@
 <link rel="stylesheet" href="style/Collaboration_style.css">        
 <title> Collaboration </title>
 <meta charset="utf-8"/>
+<script>
+
+function addButton(){
+    var btn = document.createElement("BUTTON");
+    btn.style.background="blue";
+    btn.style.width="100%";
+    btn.style.height="50px";
+    document.getElementById("hotels").appendChild(btn);
+}
+
+</script>
 </head>
 
 <body>
@@ -39,19 +50,19 @@
             </div>
         </div>
         <div id="row2">
-            <div class="column2"> 
-         Hello
+            <div class="column2" id="hotels"> 
+         
             </div>
 
-            <div class="column2"> 
-
-            </div>
-
-            <div class="column2"> 
+            <div class="column2" id="flights"> 
 
             </div>
 
-            <div class="column2"> 
+            <div class="column2" id="carRentals"> 
+
+            </div>
+
+            <div class="column2" id="restaurants"> 
 
             </div>
 
@@ -61,6 +72,7 @@
     <section id="participants" style="border:none;"> 
         <hr>
         <h1> Participants </h1>
+        <span style="color:blue" onclick="addButton()"> Me </span>
     </section>
 
 </body>

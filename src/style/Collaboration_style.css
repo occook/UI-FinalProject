@@ -33,8 +33,9 @@ background:#A9A9A9;
 margin-left:20px;
 margin-right:20px;
 margin-bottom:0px;
-height:350px;
+height:400px;
 padding:10px;
+margin-top:10px;
 }
 
 #participants{
@@ -94,7 +95,10 @@ padding:10px;
     padding: 10px;
     box-sizing: border-box;
     border-right: 1px solid #5f656d; /* Border on the right */
-    height: 250px;
+    height:320px;
+    display: flex;
+    flex-direction: column-reverse;
+    
 }
 #row1, #row2{
     content: "";
