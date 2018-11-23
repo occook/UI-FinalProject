@@ -1,11 +1,10 @@
 body{
     background: lightgray;
     vertical-align: middle;
-    text-align: center;
     font-size: 14px;
     font-family: "Arial";
 }
-
+/*
 div{
     background: rgb(165, 165, 165);
     float: left;
@@ -14,9 +13,15 @@ div{
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-}
+}*/
 
 form{
     display: block;
     float: none;
+}
+
+#menu_imgs{
+   width:30px;
+   height:30px;
+   opacity:0.5;
 }
