@@ -47,6 +47,7 @@ button{
   font-size:14px;
   height: 24px;
   vertical-align: bottom;
+  float: none;
 }
 #searchLogo{
   vertical-align: top;
