@@ -24,6 +24,8 @@ button{
   border-radius: 8px;
   vertical-align: middle;
   float: right;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 .buttonPNG{
@@ -63,7 +65,7 @@ button{
 /*
   Deals with CSS of the List of images and selections. Each one will be a link with a picture.
 */
-ul {
+#list_of_links {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -72,13 +74,44 @@ ul {
     padding:0px;
 }
 
-li {
+.selector_list {
     display: inline-block;
     margin:0px auto;
     padding:0px;
 }
+
+.home_selector{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.selector_link:visited{
+  color: none
+}
+
 #selections{
   border: 0 solid #000;
   border-top: 5px solid #6d6d6d;
   border-bottom: 5px solid #6d6d6d;
+}
+
+/*
+  This sections deals with the footer. These are just the links that appear at the bottom.
+*/
+#footer_list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin:0px auto;
+  padding:0px;
+}
+.footer_list_option{
+  display: inline-block;
+  margin:0px auto;
+  padding:0px;
+  margin-top: 15px;
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #1f7093;
 }
