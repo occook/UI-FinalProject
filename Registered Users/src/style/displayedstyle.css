@@ -39,6 +39,22 @@
     border: 2px solid darkgray;
 }
 
+#flight_image_displayed{
+    width: 130px;
+    height: 70px;
+    float: left;
+    margin-left: 25px;
+}
+
+#object_cost{
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+    position: absolute;
+    left: 75%;
+    padding-top: 12px;
+}
+
 #share_image{
     width: 20px;
     height: 20px;
@@ -47,22 +63,60 @@
     margin-top: 15px;
 }
 
-#object_cost{
-    font-size: 30px;
-    font-weight: bold;
-    color: green;
-    float: right;
-    padding: 15px;
-    padding-right: 25px;
-}
 
 #star{
-    height: 30px;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    left: 75%;
+}
+
+#rateIberia{
+    height: 40px;
     width: 120px;
     float: right;
-    position: relative;
-    top: -25px;
-    right: 30px;
+    position: absolute;
+    left: 75%;
+}
+
+#rateEuropa{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateHertz{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateAvis{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateInclan{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateTigre{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
 }
 
 #object_title{
@@ -70,6 +124,14 @@
     font-weight: bold;
     text-align: left;
     text-indent: 20px;
+    margin-top: 15px;
+}
+
+#flight_object_title{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 15px;
     margin-top: 15px;
 }
 
@@ -145,6 +207,14 @@
     border: 1px solid black;
 }
 
+#flight_modal_photo{
+    width:80px;
+    height:50px;
+    float: left;
+    top: 10px;
+    left: 5px;
+}
+
 #modal_name{
     font-size: 28px;
     font-weight: bold;
@@ -204,7 +274,49 @@
   font-size: : 20px;
 }
 
+#bookAvis{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookHertz{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
 #bookMercure{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookEuropa{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookIberia{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookInclan{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookTigre{
   float: left;
   margin-left: 15px;
   margin-top: -20px;

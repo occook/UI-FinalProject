@@ -1,0 +1,115 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style/styling.css">
+<link rel="stylesheet" href="style/displayedstyle.css">
+<title> Display Page </title>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!---THE HEADER HAS THE LOGO, THE PAGE TRAIL, AND THE PAGE'S TITLE-->
+    <div id="logo_circle"></div>
+    <br>
+    <br>
+    <div id="page_trail"><href>Home</href> > <href>Search Restaurants</href> > <href>Restaurants</href></div>
+    <div id="page_title">RESTAURANTS</div>
+
+
+    <!--THERE ARE 2 DIV OBJECTS, EACH REPRESENTING A HOTEL RECOMMENDATION,
+    THE OBJECTS INSIDE OF THIS ARE DISPLAYED FROM TOP TO BOTTOM-->
+    <div id="object_displayed">
+        <!--THE RESTAURANT IMAGE ON THE LEFT-->
+        <img src ="images/inclan.jpeg" alt="Inclan Brutal Bar" id="image_displayed">
+        <!--THE RESTAURANT COST ON THE RIGHT-->
+        <div id="object_cost">$$-$$$</div>
+        <!--THE RESTAURANT TITLE IN THE CENTER-->
+        <div id="object_title">Inclán Brutal Bar </div>
+        <!--THE RESTAURANT RATING ON THE RIGHT-->
+        <img src="images/four_half_stars.png" alt="Rating" id="star">
+        <!--THE RESTAURANT ADDRESS IN THE CENTER-->
+        <div id="object_address">Calle Álvarez Gato, 4, 28012 Madrid</div>
+        <br>
+        <!--THE KEYWORDS AND DESCRIPTION ARE IN THE MIDDLE OF THE BOX-->
+        <div id="object_keywords_description"><b>Keywords: </b>Casual, Family, Tapas</div>
+        <br>
+        <div id="object_keywords_description"><b>Description: </b>
+            Beautiful restaurant in Las Letras which serves wonderful tapas and cocktails. It is decorated and dedicated to the wonderful Spanish author Ramón Valle-Inclán. The relatively new restaurant is a beautiful spot to bring a group of friends ...</div>
+        <br>
+
+        <!--AT THE BOTTOM OF EACH BOX, THERE IS A BUTTON TO SHOW COMMENTS/RATINGS
+        FROM OTHER CUSTOMERS. WHEN THE USER CLICKS ON THIS BOX, A MODAL APPEARS WITH RECENT RATINGS AND COMMENTS.-->
+        <div class="object_comments" id="Inclan" onclick="showModal(this.id)">Click Here to Display Recent Customer's Ratings/Comments</div>
+        <div id="InclanModal" class="modal">
+            <!--BELOW IS THE CONTENT OF THE MODAL-->
+            <div class = "modal-content">
+                <span class="object_comments_close" id="InclanClose">&times;</span>
+                <img src="images/inclan.jpeg" id="modal_photo">
+                <div id="modal_name">Inclán Brutal Bar Reviews</div>
+                <br>
+                <br>
+                <br>
+                <img src="images/four_stars.png" alt="Rating" id="comments_reviews">
+                <p>Lovely new restaurant in Las Letras. Loved the friendly staff and the unique decor.</p>
+                <hr>
+                <img src="images/five_stars.png" alt="Rating" id="comments_reviews">
+                <p>Amazing restaurant with delicious tapas.</p>
+                <hr>
+                <img src="images/three_stars.png" alt="Rating" id="comments_reviews">
+                <p>The food was delicious but we had to wait for a very long time to receive a table.</p>
+                <hr>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="object_displayed">
+        <!--THE RESTAURANT IMAGE ON THE LEFT-->
+        <img src = "images/eltigre.jpeg" alt="Sidrería El Tigre" id="image_displayed">
+        <!--THE RESTAURANT COST ON THE RIGHT-->
+        <div id="object_cost">$-$$</div>
+        <!--THE RESTAURANT TITLE IN THE CENTER-->
+        <div id="object_title">Sidrería El Tigre</div>
+        <!--THE RESTAURANT RATING ON THE RIGHT-->
+        <img src="images/three_stars.png" alt="Rating" id="star">
+        <!--THE RESTAURANT ADDRESS IN THE CENTER-->
+        <div id="object_address">21, Calle de las Infantas, 25, 28004 Madrid</div>
+        <br>
+        <!--THE KEYWORDS AND DESCRIPTION ARE IN THE MIDDLE OF THE BOX-->
+        <div id="object_keywords_description"><b>Keywords: </b>Tapas, Cervecería</div>
+        <br>
+        <div id="object_keywords_description"><b>Description: </b>
+            El tigre is a very popular bar among students in Madrid. If you are hungry after the whole day walking this is your spot. When you order a drink you get a huge amount of tapas, usually bread with cheese, patatas bravas, tortilla de patatas ...</div>
+        <br>
+
+        <!--AT THE BOTTOM OF EACH BOX, THERE IS A BUTTON TO SHOW COMMENTS/RATINGS
+        FROM OTHER CUSTOMERS. WHEN THE USER CLICKS ON THIS BOX, A MODAL APPEARS WITH RECENT RATINGS AND COMMENTS.-->
+        <div class="object_comments" id="Tigre" onclick="showModal(this.id)">Click Here to Display Recent Customer's Ratings/Comments</div>
+        <div id="TigreModal" class="modal">
+            <!--BELOW IS THE CONTENT OF THE MODAL-->
+            <div class = "modal-content">
+                <span class="object_comments_close" id="TigreClose">&times;</span>
+                <img src="images/eltigre.jpeg" id="modal_photo">
+                <div id="modal_name">Sidrería El Tigre Reviews</div>
+                <br>
+                <br>
+                <br>
+                <img src="images/four_stars.png" alt="Rating" id="comments_reviews">
+                <p>Wonderful spot to go for a beer and tapas. Cheap as well!</p>
+                <hr>
+                <img src="images/two_half_stars.png" alt="Rating" id="comments_reviews">
+                <p>The atmosphere was fun but the restaurant was dirty.</p>
+                <hr>
+                <img src="images/three_stars.png" alt="Rating" id="comments_reviews">
+                <p>Loved the free tapas but the restaurant was full of loud, rowdy students.</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+<!--THE ATTACHED JAVA SCRIPT FILE-->
+<script src="script/displayed_script.js"></script>
+
+</body>
+</html>

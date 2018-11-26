@@ -39,6 +39,34 @@ function bookConfirm(){
   alert("Your booking is complete!")
 }
 
+function resConfirm(){
+  alert("Your reservation is complete!")
+}
+
 function westinAddFunc(){
   alert("The Westin Palace Hotel has been added to your Collaborative List!")
+}
+
+function iberiaAddFunc(){
+  alert("Iberia Airlines has been added to your Collaborative List!")
+}
+
+function europaAddFunc(){
+  alert("Air Europa has been added to your Collaborative List!")
+}
+
+function hertzAddFunc(){
+  alert("Hertz has been added to your Collaborative List!")
+}
+
+function avisAddFunc(){
+  alert("Avis has been added to your Collaborative List!")
+}
+
+function inclanAddFunc(){
+  alert("Inclán Brutal Bar has been added to your Collaborative List!")
+}
+
+function tigreAddFunc(){
+  alert("Sidrería El Tigre has been added to your Collaborative List!")
 }

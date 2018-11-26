@@ -1,0 +1,226 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style/styling.css">
+<link rel="stylesheet" href="style/displayedstyle.css">
+<title> Display Page </title>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!---THE HEADER HAS THE LOGO, THE PAGE TRAIL, AND THE PAGE'S TITLE-->
+    <div id="logo_circle"></div>
+    <br>
+    <br>
+    <div id="page_trail"><href>Home</href> > <href>Search Car Rental</href> > <href>Car Rental</href></div>
+    <div id="page_title">CAR RENTAL</div>
+
+
+    <!--THERE ARE 2 DIV OBJECTS, EACH REPRESENTING A HOTEL RECOMMENDATION,
+    THE OBJECTS INSIDE OF THIS ARE DISPLAYED FROM TOP TO BOTTOM-->
+    <div id="object_displayed">
+        <!--THE CAR IMAGE ON THE LEFT-->
+        <img src ="images/hertz.png" alt="Hertz Rental Car" id="image_displayed">
+        <!--THE CAR COST ON THE RIGHT-->
+        <div id="object_cost">$25/day</div>
+        <!--THE CAR TITLE IN THE CENTER-->
+        <div id="object_title">Economy Toyota Yaris </div>
+        <!--THE CAR RATING ON THE RIGHT-->
+        <img src="images/three_stars.png" alt="Rating" id="star">
+        <div id = "rateHertz" onclick="showModal(this.id)"><br><br><br><u>Click here to rate</u></div>
+        <div id = "rateHertzModal" class = "modal">
+          <div class = "modal-content">
+            <span class="object_comments_close" id="rateHertzClose">&times;</span>
+            <b> Rating Hertz</b>
+            <br>
+            <div id ="rate_stars">☆☆☆☆☆</div>
+            <br>
+            <form> Date of Experience: <input type = "date" name = "date">
+            <br>
+            <br>
+            Your Review: <input type = "text" name = "review" value = "Tell us more about your experience..." size =40>
+            </form>
+            <br>
+            Category: CAR RENTALS
+            <br>
+            Click to add to favorites-Collaborative List
+            <br>
+            <button type="button" id = "favorites" onclick = "hertzAddFunc()">&hearts;</button>
+            <br>
+            <br>
+            <button type = "button" onclick = "submitFunc()"> SUBMIT REVIEW</button>
+
+          </div>
+        </div>
+
+
+        <!--THE CAR ADDRESS IN THE CENTER-->
+        <div id="object_address">Hertz, Madrid Airport</div>
+        <br>
+        <!--THE KEYWORDS AND DESCRIPTION ARE IN THE MIDDLE OF THE BOX-->
+        <div id="object_keywords_description"><b>Keywords: </b>Manual Transmission, 4 Doors</div>
+        <br>
+        <div id="object_keywords_description"><b>Description: </b>
+            Economy car with 4 doors to be picked up at Madrid's Adolfo Suarez Barajas airport and returned to the same location. The car is a manual transmission with air conditioning and unlimited mileage ...</div>
+        <br>
+
+        <!--AT THE BOTTOM OF EACH BOX, THERE IS A BUTTON TO SHOW COMMENTS/RATINGS
+        FROM OTHER CUSTOMERS. WHEN THE USER CLICKS ON THIS BOX, A MODAL APPEARS WITH RECENT RATINGS AND COMMENTS.-->
+        <div class="object_comments" id="Hertz" onclick="showModal(this.id)">Click Here to Display Recent Customer's Ratings/Comments</div>
+        <div id = "bookHertz" onclick="showModal(this.id)"><b>CLICK HERE TO RENT CAR!</b></div>
+        <div id = "bookHertzModal" class = "modal">
+          <div class = "modal-content">
+            <span class="object_comments_close" id="bookHertzClose">&times;</span>
+            <h1>HERTZ RENTAL CAR </h1>
+            <br>
+            February 5th, 2019
+            <br>
+            <br>
+            Driver Name: Alexander Smith
+            <br>
+            <br>
+            <u>PRICE BREAKDOWN:</u>
+            <br>
+            Flate Rate: 70.00
+            <br>
+            Daily rate x1: 5.00
+            <br>
+            Gas Fee: 15.00
+            <br>
+            <br>
+            <div id = "westinTotal"> Total Cost: $90.00</div>
+            <br>
+            <br>
+            <button type = "button" id = "confirmBooking" onclick="bookConfirm()">CONFIRM BOOKING</button>
+          </div>
+        </div>
+        <div id="HertzModal" class="modal">
+            <!--BELOW IS THE CONTENT OF THE MODAL-->
+            <div class = "modal-content">
+                <span class="object_comments_close" id="HertzClose">&times;</span>
+                <img src="images/hertz.png" id="modal_photo">
+                <div id="modal_name">Hertz Toyota Yaris Reviews</div>
+                <br>
+                <br>
+                <br>
+                <img src="images/three_stars.png" alt="Rating" id="comments_reviews">
+                <p>The car worked well and we had no issues. However, the car is small for 5 people with luggage.</p>
+                <hr>
+                <img src="images/four_stars.png" alt="Rating" id="comments_reviews">
+                <p>Easy car and was great for our quick trip.</p>
+                <hr>
+                <img src="images/two_stars.png" alt="Rating" id="comments_reviews">
+                <p>The pickup desk at the airport was extremely unhelpful.</p>
+                <hr>
+            </div>
+        </div>
+        <div id = "share_hotel"> Share with...<br><a href = "https://www.facebook.com/"> <img src = "images/facebook.png" alt = "facebook" id ="share_image"></a> <a href = "https://www.google.com/gmail/"><img src = "images/gmail.png" alt = "gmail" id = "share_image"></a> <a href = "https://twitter.com/"> <img src = "images/twitter.jpg" alt = "twitter" id = "share_image"></a></div>
+
+    </div>
+
+    <div id="object_displayed">
+        <!--THE CAR IMAGE ON THE LEFT-->
+        <img src = "images/avis.png" alt="Avis Rental Car" id="image_displayed">
+        <!--THE CAR COST ON THE RIGHT-->
+        <div id="object_cost">$60/day</div>
+        <!--THE CAR TITLE IN THE CENTER-->
+        <div id="object_title">Compact Volkswagen Golf</div>
+        <!--THE CAR RATING ON THE RIGHT-->
+        <img src="images/four_stars.png" alt="Rating" id="star">
+        <div id = "rateAvis" onclick="showModal(this.id)"><br><br><br><u>Click here to rate</u></div>
+        <div id = "rateAvisModal" class = "modal">
+          <div class = "modal-content">
+            <span class="object_comments_close" id="rateAvisClose">&times;</span>
+            <b> Rating Avis</b>
+            <br>
+            <div id ="rate_stars">☆☆☆☆☆</div>
+            <br>
+            <form> Date of Experience: <input type = "date" name = "date">
+            <br>
+            <br>
+            Your Review: <input type = "text" name = "review" value = "Tell us more about your experience..." size =40>
+            </form>
+            <br>
+            Category: CAR RENTALS
+            <br>
+            Click to add to favorites-Collaborative List
+            <br>
+            <button type="button" id = "favorites" onclick = "avisAddFunc()">&hearts;</button>
+            <br>
+            <br>
+            <button type = "button" onclick = "submitFunc()"> SUBMIT REVIEW</button>
+
+          </div>
+        </div>
+
+
+        <!--THE CAR ADDRESS IN THE CENTER-->
+        <div id="object_address">Avis, Madrid Airport</div>
+        <br>
+        <!--THE KEYWORDS AND DESCRIPTION ARE IN THE MIDDLE OF THE BOX-->
+        <div id="object_keywords_description"><b>Keywords: </b>Automatic Transmission, 4 Doors</div>
+        <br>
+        <div id="object_keywords_description"><b>Description: </b>
+            Economy car with 4 doors to be picked up at Madrid's Adolfo Suarez Barajas airport and returned to the same location. The car is an automatic transmission with air conditioning and unlimited mileage...</div>
+        <br>
+
+        <!--AT THE BOTTOM OF EACH BOX, THERE IS A BUTTON TO SHOW COMMENTS/RATINGS
+        FROM OTHER CUSTOMERS. WHEN THE USER CLICKS ON THIS BOX, A MODAL APPEARS WITH RECENT RATINGS AND COMMENTS.-->
+        <div class="object_comments" id="Avis" onclick="showModal(this.id)">Click Here to Display Recent Customer's Ratings/Comments</div>
+        <div id = "bookAvis" onclick="showModal(this.id)"><b>CLICK HERE TO RENT CAR!</b></div>
+        <div id = "bookAvisModal" class = "modal">
+          <div class = "modal-content">
+            <span class="object_comments_close" id="bookAvisClose">&times;</span>
+            <h1>AVIS RENTAL CAR </h1>
+            <br>
+            February 5th, 2019
+            <br>
+            <br>
+            Driver Name: Alexander Smith
+            <br>
+            <br>
+            <u>PRICE BREAKDOWN:</u>
+            <br>
+            Flate Rate: 50.00
+            <br>
+            Daily rate x2: 8.00
+            <br>
+            Gas Fee: 10.00
+            <br>
+            <br>
+            <div id = "westinTotal"> Total Cost: $76.00</div>
+            <br>
+            <br>
+            <button type = "button" id = "confirmBooking" onclick="bookConfirm()">CONFIRM BOOKING</button>
+          </div>
+        </div>
+
+        <div id="AvisModal" class="modal">
+            <!--BELOW IS THE CONTENT OF THE MODAL-->
+            <div class = "modal-content">
+                <span class="object_comments_close" id="AvisClose">&times;</span>
+                <img src="images/avis.png" id="modal_photo">
+                <div id="modal_name">Avis Volkswagen Golf Reviews</div>
+                <br>
+                <br>
+                <br>
+                <img src="images/four_stars.png" alt="Rating" id="comments_reviews">
+                <p>The car was nice and even included an automated navigation system.</p>
+                <hr>
+                <img src="images/four_half_stars.png" alt="Rating" id="comments_reviews">
+                <p>The car was cheap and easy. No problems!</p>
+                <hr>
+                <img src="images/three_half_stars.png" alt="Rating" id="comments_reviews">
+                <p>The car was slightly small for our family.</p>
+                <hr>
+            </div>
+        </div>
+        <div id = "share_hotel"> Share with...<br><a href = "https://www.facebook.com/"> <img src = "images/facebook.png" alt = "facebook" id ="share_image"></a> <a href = "https://www.google.com/gmail/"><img src = "images/gmail.png" alt = "gmail" id = "share_image"></a> <a href = "https://twitter.com/"> <img src = "images/twitter.jpg" alt = "twitter" id = "share_image"></a></div>
+    </div>
+
+<!--THE ATTACHED JAVA SCRIPT FILE-->
+<script src="script/displayed_script.js"></script>
+
+</body>
+</html>
