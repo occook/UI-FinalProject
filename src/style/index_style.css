@@ -23,6 +23,7 @@ button{
   font-family: "Arial";
   border-radius: 8px;
   vertical-align: middle;
+  float: right;
 }
 
 .buttonPNG{
@@ -51,7 +52,32 @@ button{
   vertical-align: top;
 }
 
-/* Deals with spacing of the background image */
+/*
+  Deals with spacing of the background image
+*/
 #header{
   height: 120px;
+}
+
+/*
+  Deals with CSS of the List of images and selections. Each one will be a link with a picture.
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin:0px auto;
+    padding:0px;
+}
+
+li {
+    display: inline-block;
+    margin:0px auto;
+    padding:0px;
+}
+#selections{
+  border: 0 solid #000;
+  border-top: 5px solid #6d6d6d;
+  border-bottom: 5px solid #6d6d6d;
 }
