@@ -20,3 +20,68 @@ form{
     display: block;
     float: none;
 }
+#registerbody{
+  height: 100%;
+  width: 100%;
+}
+#registerFile{
+  display:grid;
+  float: left;
+  margin-left: 25%;
+  width: 50%;
+  margin-top: 5%;
+  margin-right: 25%;
+}
+#u1_div {
+    border-width: 0px;
+    position: relative;
+    background: inherit;
+    background-color: rgba(215, 215, 215, 1);
+    border: none;
+    width: 50%;
+    height: 50%;
+    border-radius: 0px;
+    text-align: center;
+    font-family: 'ArialMT', 'Arial';
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    line-height: normal;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-image: none;
+}
+#u19{
+  border: none;
+  font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
+  border-width: 0px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    word-wrap: break-word;
+    margin: 0px;
+    background-image: none;
+    position: static;
+    left: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+}
+#u19.p{
+width: 25%;
+}
+#u18_img{
+  border-width: 0px;
+position: relative;
+align-content: right;
+width: 30px;
+height: 30px;
+}
+#u18{
+  border: none;
+display: inline-block;
+}
+div {
+    display: block;
+}

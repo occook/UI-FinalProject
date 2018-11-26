@@ -6,17 +6,35 @@
 </head>
 
 <body>
-    <div>
-    <div><p>SECOND DIV ELEMENT
-        </p></div>
-    <form>
-        <input type="text" class="linePerline" placeholder="Username">
-        <input type="text" class="linePerline" placeholder="Password">
-        <input type="text" class="linePerline" placeholder="Date of birth"> 
-        <input type="text" class="linePerline" placeholder="address"> 
-        <input type="text" class="linePerline" placeholder="mobile phone">
-        <input type="text" class="linePerline" placeholder="birthday"> 
-    </form>
+  <script type="text/javascript" src="script/script.js"></script>
+    <div id = "registerbody">
+
+
+          <div id = "u19" class = "text"><p>
+
+            <span>REGISTRATION</span>
+              </p>
+              <div id = "u18" class = "img">
+                <img id = "u18_img"class = "img" src = "images/Registration.png"></div>
+            </div>
+          <div id = "u1_div" class>
+            <b>Register Now!</b>
+            <form id = "registerFile"  method='post' onsubmit="helperRegister()" name='regForm'>
+                <input type="text" class="linePerline" name = "username" placeholder="Username">
+                <input type="text" class="linePerline" name = "psw" placeholder="Password">
+                <input type="text" class="linePerline" name = "email" placeholder="Email">
+                <input type="text" class="linePerline" name = "address" placeholder="address">
+                <input type="text" class="linePerline" name = "birthday" placeholder="Date of birth">
+                <b>Choose Picture</b>
+<input type = 'file' name = 'profilePicture'>
+                <input type = 'submit' value = 'Register'>
+            </form>
+
+
+
+
+          </div>
+
     </div>
 
 
