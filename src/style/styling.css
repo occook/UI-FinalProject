@@ -50,38 +50,49 @@ form{
     margin-left: 25%;
     margin-right: 25%;
     background-image: none;
+    align-content: center;
 }
 #u19{
   border: none;
   font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
-  border-width: 0px;
     position: relative;
     left: 0px;
     top: 0px;
     word-wrap: break-word;
     margin: 0px;
-    background-image: none;
-    position: static;
     left: auto;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    display: inline-block;
 }
-#u19.p{
-width: 25%;
-}
+
 #u18_img{
   border-width: 0px;
 position: relative;
-align-content: right;
 width: 30px;
 height: 30px;
+display: inline-block;
 }
 #u18{
+  width: 25%;
   border: none;
 display: inline-block;
 }
+#registerTop{
+  display: inline-block;
+  width: 100%;
+}
 div {
     display: block;
+}
+#foots{
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  bottom: 0px;
+
+}
+#footerHolder{
+  padding: 0px;
+}
+.foot{
+  justify-content: center;
+  display: inline-block;
 }
