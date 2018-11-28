@@ -15,6 +15,9 @@ div{
     flex-wrap: nowrap;
     position: relative;
 }
+#logInText{
+  font-size: 16;
+}
 
 form{
     display: block;
@@ -25,8 +28,19 @@ form{
   height: 100%;
   width: 100%;
 }
+#logInFile .linePerline{
+  float: right;
+}
+#subButton{
+  width: 100%;
+  background-color: rgba(165, 165, 165);
+  border: none;
+  text-align: center;
+}
 #logInFile{
-  display:grid;
+  overflow: auto;
+  text-align: left;
+  display:inline-block;
   float: left;
   margin-left: 25%;
   width: 50%;
@@ -50,7 +64,7 @@ ul#ulxx li{
 
 }
 
-#u1_div {
+#form_div {
     border-width: 0px;
     position: relative;
     background: inherit;

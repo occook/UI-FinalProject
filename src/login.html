@@ -13,13 +13,21 @@
         <img src = "images/logo.png" alt = "Logo" width=68px height=46px align = "left"> <!-- logo  -->
         <li class="firstA"> <a href="index.html"> > Back Home</a></li>
       </header>
-          <div id = "u1_div" class>
+          <div id = "form_div" class>
             <b>Login</b>
             <form id = "logInFile"  method='submit' onsubmit="helperLogIn();" name='regForm'>
+              <a id = "logInText">Email</a>
                 <input type="text" class="linePerline" name = "logInEmail" placeholder="Email" required>
-                <input type="text" class="linePerline" name = "psw" placeholder="Password" required>
+<br>
+<br>
+                <a id = "logInText">Password</a>
+                <input type="password" class="linePerline" name = "psw" placeholder="Password" pattern = '[a-z0-9]{1,8}' required>
               <br>
-                <input type = 'submit' value = 'Login' formaction = 'index.html'>
+              <br>
+              <br>
+              <div id  = "subButton">
+                <input   type = 'submit' value = 'Login' formaction = 'index.html'>
+              </div>
             </form>
 
           </div>

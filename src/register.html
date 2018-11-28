@@ -14,20 +14,37 @@
           <header id="header"> <!-- header div object  -->
     <img src = "images/logo.png" alt = "Logo" width=68px height=46px align = "left"> <!-- logo  -->
       <li class="firstA"> <a href="index.html"> > Back Home</a></li>
-      <div id="secondH"><b>REGISTRATION</b><!-- option 2 -->
+      <div id="secondH"><b id = "registrationText">REGISTRATION</b><!-- option 2 -->
       <img id = "logo_img"class = "img" src = "images/Registration.png" width=5% height=99% align = "center"></div>
 
    </header> <!-- end header div object  -->
-          <div id = "u1_div" class>
+          <div id = "form_div" class>
             <b id = "registerBold">Register Now!</b>
             <form id = "registerFile"  method="post" onsubmit="helperRegister()" name='regForm'>
-                <input type="text" class="linePerline" name = "username" placeholder="Username" required >
-                <input type="text" class="linePerline" name = "psw" placeholder="Password" required>
-                <input type="email" class="linePerline" name = "email" placeholder="Email" required>
+              <a id = "regFormTexts">Username</a>
+                <input type="text" class="linePerline" name = "username" required >
+                <br>
+                <br>
+                <a id = "regFormTexts">Password</a>
+                <input type="password" class="linePerline" name = "psw" pattern = '[a-z0-9]{1,8}'  required>
+                <br>
+                <br>
+                <a id = "regFormTexts">Email</a>
+                <input type="email" class="linePerline" name = "email"  required>
+                <br>
+                <br>
+                <a id = "regFormTexts">Date of birth</a>
                 <input type="date" class="linePerline" name = "birthday" required >
-                <b>Choose Picture</b>
-                <input type = 'file' name = 'profilePicture'>
+                <br>
+                <br>
+                <a id = "regFormTexts">Choose Picture</a>
+                <input type = 'file' id = 'profilePicture' name = 'profilePicture' >
+                <br>
+                <br>
+<div id = "formButton">
                 <input type = 'submit' value = 'Register' formaction = 'login.html'>
+                <input  type = 'submit' value= "Register and Return Home" formaction = 'index.html'>
+</div>
             </form>
 
           </div>
