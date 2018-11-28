@@ -17,6 +17,7 @@ div{
 }
 #logInText{
   font-size: 16;
+  vertical-align: top;
 }
 
 form{
