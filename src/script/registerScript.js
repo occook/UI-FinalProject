@@ -24,8 +24,8 @@ function storeValues(form){ //this form puts the values in the cookie when you r
         setCookie('birthday', regForm.birthday.value, count);
         setCookie('profilePicture', regForm.profilePicture.value, count);
 
-        console.log(5);
       }
+
       return true;
     }
 function setCookie(name,value, count){ //concatenates strings together

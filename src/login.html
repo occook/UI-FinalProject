@@ -2,40 +2,42 @@
 
 <head>
 <link rel="stylesheet" href="style/login.css">
-<title> Register Page </title>
+<title> Login </title>
 </head>
 
 <body>
   <script type="text/javascript" src="script/login.js"></script>
-    <div id = "registerbody">
+    <div id = "logInbody">
 
-      <div id = "registerTop">
+      <div id = "logInTop">
           <div id = "u19" class = "text"><p>
 
-            <span>REGISTRATION</span>
+
               </p>
               <div id = "u18" class = "img">
                 <img id = "u18_img"class = "img" src = "images/Registration.png"></div>
             </div>
           </div>
           <div id = "u1_div" class>
-            <b>Register Now!</b>
-            <form id = "registerFile"  method='submit' onsubmit="helperRegister();" name='regForm'>
-                <input type="text" class="linePerline" name = "username" placeholder="Username" required>
+            <b>Login</b>
+            <form id = "logInFile"  method='submit' onsubmit="helperLogIn();" name='regForm'>
+                <input type="text" class="linePerline" name = "logInEmail" placeholder="Email" required>
                 <input type="text" class="linePerline" name = "psw" placeholder="Password" required>
-                <input type="text" class="linePerline" name = "email" placeholder="Email" required>
-                <input type="date" class="linePerline" name = "birthday" required >
-                <b>Choose Picture</b>
-                <input type = 'file' name = 'profilePicture'>
-                <input type = 'submit' value = 'Register' formaction="index.html">
+                <br>
+
+                <br> <br>
+                <input type = 'submit' value = 'Login' formaction = 'index.html'>
             </form>
 
           </div>
           <div id="foots"> <!-- footer div object  -->
                 <ul id = "footerHolder">
-                  <li class="foot"><a>Copyright</a></li> <!-- copyright option  -->
+
                   <li class = "foot"><a href="https://www.facebook.com">Facebook</a></li> <!-- link to facebook  -->
-                  <li class = "foot"><a href="https://www.twitter.com">Twitter</a></li> <!-- link to twitter -->
+                  <li class = "foot"><a href>Terms & Conditions</a></li>
+                    <li class = "foot"><a href>Privacy Policy</a></li>
+                      <li class = "foot"><a href>About Us</a></li>
+                        <li class = "foot"><a href>Language</a></li>
                 </ul>
               </div>
     </div>

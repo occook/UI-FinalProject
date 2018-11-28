@@ -2,40 +2,46 @@
 
 <head>
 <link rel="stylesheet" href="style/register.css">
-<title> Register Page </title>
+<title> Register </title>
 </head>
 
 <body>
   <script type="text/javascript" src="script/registerScript.js"></script>
     <div id = "registerbody">
 
-      <div id = "registerTop">
-          <div id = "u19" class = "text"><p>
 
-            <span>REGISTRATION</span>
-              </p>
-              <div id = "u18" class = "img">
-                <img id = "u18_img"class = "img" src = "images/Registration.png"></div>
-            </div>
-          </div>
+
+          <header id="header"> <!-- header div object  -->
+    <img src = "images/logo.png" alt = "Logo" width=68px height=46px align = "left"> <!-- logo  -->
+      <li class="firstA"> > Back Home</li>
+        <div id = "optionsH"> <!-- insert the three options  -->
+            <ul id = "ulxx"> <!-- unsorted list  -->
+                <li class="secondH"><a>REGISTRATION</a></li> <!-- option 2 -->
+              <img id = "u18_img"class = "img" src = "images/Registration.png" width=5% height=99% align = "right">
+            </ul> <!-- end unsorted list  -->
+        </div> <!-- end options div object  -->
+   </header> <!-- end header div object  -->
           <div id = "u1_div" class>
             <b>Register Now!</b>
-            <form id = "registerFile"  method='submit' onsubmit="helperRegister();" name='regForm'>
-                <input type="text" class="linePerline" name = "username" placeholder="Username" required>
+            <form id = "registerFile"  method="post" onsubmit="helperRegister()" name='regForm'>
+                <input type="text" class="linePerline" name = "username" placeholder="Username" required >
                 <input type="text" class="linePerline" name = "psw" placeholder="Password" required>
-                <input type="text" class="linePerline" name = "email" placeholder="Email" required>
+                <input type="email" class="linePerline" name = "email" placeholder="Email" required>
                 <input type="date" class="linePerline" name = "birthday" required >
                 <b>Choose Picture</b>
                 <input type = 'file' name = 'profilePicture'>
-                <input type = 'submit' value = 'Register' formaction="index.html">
+                <input type = 'submit' value = 'Register' formaction = 'login.html'>
             </form>
 
           </div>
           <div id="foots"> <!-- footer div object  -->
                 <ul id = "footerHolder">
-                  <li class="foot"><a>Copyright</a></li> <!-- copyright option  -->
+
                   <li class = "foot"><a href="https://www.facebook.com">Facebook</a></li> <!-- link to facebook  -->
-                  <li class = "foot"><a href="https://www.twitter.com">Twitter</a></li> <!-- link to twitter -->
+                  <li class = "foot"><a href>Terms & Conditions</a></li>
+                    <li class = "foot"><a href> Privacy Policy</a></li>
+                      <li class = "foot"><a href>About Us</a></li>
+                        <li class = "foot"><a href>Language</a></li>
                 </ul>
               </div>
     </div>
