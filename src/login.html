@@ -9,23 +9,16 @@
   <script type="text/javascript" src="script/login.js"></script>
     <div id = "logInbody">
 
-      <div id = "logInTop">
-          <div id = "u19" class = "text"><p>
-
-
-              </p>
-              <div id = "u18" class = "img">
-                <img id = "u18_img"class = "img" src = "images/Registration.png"></div>
-            </div>
-          </div>
+      <header id="header"> <!-- header div object  -->
+        <img src = "images/logo.png" alt = "Logo" width=68px height=46px align = "left"> <!-- logo  -->
+        <li class="firstA"> <a href="index.html"> > Back Home</a></li>
+      </header>
           <div id = "u1_div" class>
             <b>Login</b>
             <form id = "logInFile"  method='submit' onsubmit="helperLogIn();" name='regForm'>
                 <input type="text" class="linePerline" name = "logInEmail" placeholder="Email" required>
                 <input type="text" class="linePerline" name = "psw" placeholder="Password" required>
-                <br>
-
-                <br> <br>
+              <br>
                 <input type = 'submit' value = 'Login' formaction = 'index.html'>
             </form>
 

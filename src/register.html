@@ -13,16 +13,13 @@
 
           <header id="header"> <!-- header div object  -->
     <img src = "images/logo.png" alt = "Logo" width=68px height=46px align = "left"> <!-- logo  -->
-      <li class="firstA"> > Back Home</li>
-        <div id = "optionsH"> <!-- insert the three options  -->
-            <ul id = "ulxx"> <!-- unsorted list  -->
-                <li class="secondH"><a>REGISTRATION</a></li> <!-- option 2 -->
-              <img id = "u18_img"class = "img" src = "images/Registration.png" width=5% height=99% align = "right">
-            </ul> <!-- end unsorted list  -->
-        </div> <!-- end options div object  -->
+      <li class="firstA"> <a href="index.html"> > Back Home</a></li>
+      <div id="secondH"><b>REGISTRATION</b><!-- option 2 -->
+      <img id = "logo_img"class = "img" src = "images/Registration.png" width=5% height=99% align = "center"></div>
+
    </header> <!-- end header div object  -->
           <div id = "u1_div" class>
-            <b>Register Now!</b>
+            <b id = "registerBold">Register Now!</b>
             <form id = "registerFile"  method="post" onsubmit="helperRegister()" name='regForm'>
                 <input type="text" class="linePerline" name = "username" placeholder="Username" required >
                 <input type="text" class="linePerline" name = "psw" placeholder="Password" required>
