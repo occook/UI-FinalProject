@@ -1,17 +1,28 @@
+body{
+    background: lightgray;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Arial";
+}
+
+form{
+    display: block;
+    float: none;
+}
+
 #page_title{
     font-family: "Optima";
     font-size: 50px;
     font-weight: bold;
-    text-align: center;
+    float: center;
+
 }
 #logo_circle{
-    height: 80px;
-    width: 80px;
-    background-color:black;
-    border-radius: 50%;
     float: left;
     margin-left: 20px;
 }
+
 #page_trail{
     font-family: "Arial";
     font-size: 17px;
@@ -73,4 +84,25 @@
     font-family: "Arial";
     padding: 7px;
     width: 200px;
+}
+
+/*
+  This sections deals with the footer. These are just the links that appear at the bottom.
+*/
+#footer_list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin:0px auto;
+  padding:0px;
+}
+.footer_list_option{
+  display: inline-block;
+  margin:0px auto;
+  padding:0px;
+  margin-top: 15px;
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #1f7093;
 }
