@@ -73,7 +73,11 @@ header{
 #profilePicture{
   float: right;
   text-align-last: end;
+  width: 43%;
 }
+
+
+
 
 #registerFile{
   display:inline-block;
