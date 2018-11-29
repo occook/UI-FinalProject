@@ -1,0 +1,210 @@
+
+#page_trail{
+    font-family: "Arial";
+    font-size: 17px;
+    text-align: left;
+    text-indent: 30px;
+}
+
+#logo_circle{
+    height: 80px;
+    width: 80px;
+    background-color:black;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+#page_title{
+    font-family: "Optima";
+    font-size: 50px;
+    font-weight: bold;
+    background: none;
+    float: inherit;
+    margin-top:30px;
+    text-align: center;
+}
+
+#collaboration_list{
+margin-top:40px;
+background:#A9A9A9;
+margin-left:20px;
+margin-right:20px;
+margin-bottom:0px;
+height:400px;
+padding:10px;
+margin-top:10px;
+}
+
+#participants{
+background: #A9A9A9;
+margin-top:0px;
+margin-left:20px;
+margin-right:20px;
+height:300px;
+padding:10px;
+}
+
+#invite_button{
+    margin-right:0px;
+    float:right; 
+    width: 130px; 
+    font-size:15;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-right:10px;
+}
+
+#log_out{
+    border:none;
+    background:none;
+    position: absolute;
+    top:10px;
+    right:20px;
+    padding-top:0px;
+    font-size: 15px;
+}
+
+#menu_bar{
+    border:none;
+    background:none;
+    right:20px;
+    top:10px;
+    font-size: 15px;
+    margin-top:33px;
+    height:22px;
+    position: absolute;
+}
+.column1{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    overflow:scroll;
+
+}
+.column2{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #5f656d; /* Border on the right */
+    height:320px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow:scroll;
+    
+}
+#row1, #row2{
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+.box_me {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0; 
+    background: blue;
+    border-radius: 10px;
+    color: white;
+    margin-top:5px;
+    font-size: 15px;
+    text-align: left;
+}
+
+#ratings_popUp{
+    visibility: hidden;
+    position: absolute;
+   z-index:1000;
+    left:30%;
+   border: 2px solid grey;
+   width: 500px;
+   height:375px;
+   background: white;
+   top:30%;
+}
+
+#title{
+    position: relative;
+    background:grey;
+    font-weight: bold;
+    font-size: 25px;
+    color:black;
+    top:5%;
+    text-align: center;
+    height: 55px;
+}
+
+#msg{
+    top:30%;
+    left:5%;
+    position: absolute;
+    background:grey;
+    border:1px solid black;
+    width:450px;
+    height: 230px;
+}
+
+#rating_img{
+   position: relative;
+    text-align: center;
+    bottom:5px;
+}
+
+#X{
+    left:5px;
+    top:5px;
+    position: relative;
+}
+
+#participants_popUp{
+    visibility: hidden;
+    position: absolute;
+   z-index:1000;
+   border: 2px solid grey;
+   width: 350px;
+   height:200px;
+   background: white;
+   top:30%;
+   left:37%;
+}
+.participants{
+    margin-top: 5px;
+    font-size: 15px;
+    color:black;
+    background: grey;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    text-align: center;
+}
+
+.participants:hover{
+    opacity: 0.6;
+}
+
+#p_msg{
+    margin:30px;
+    position: relative;
+}
+
+#p_title{
+    position: relative;
+    background:grey;
+    font-weight: bold;
+    font-size: 25px;
+    color:black;
+    top:5%;
+    text-align: center;
+    height: 30px;
+}
+
+#Participant1_name, #Participant2_name, #Participant3_name , #Participant4_name{
+    visibility: hidden;
+} 
