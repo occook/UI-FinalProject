@@ -1,3 +1,16 @@
+body{
+    background: lightgray;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Arial";
+}
+
+form{
+    display: block;
+    float: none;
+}
+
 #page_title{
     font-family: "Optima";
     font-size: 50px;
