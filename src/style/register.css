@@ -76,6 +76,9 @@ header{
   width: 43%;
 }
 
+
+
+
 #registerFile{
   display:inline-block;
   float: left;
@@ -159,21 +162,4 @@ div {
 }
 #registerBold{
   font-size: 24px;
-}
-#footer_list{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  margin:0px auto;
-  padding:0px;
-}
-.footer_list_option{
-  display: inline-block;
-  margin:0px auto;
-  padding:0px;
-  margin-top: 15px;
-  margin-left: 12px;
-  margin-right: 12px;
-  color: #1f7093;
 }
