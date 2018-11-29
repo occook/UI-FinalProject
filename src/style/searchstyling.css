@@ -3,7 +3,6 @@
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    margin-right: 175px;
 }
 #logo_circle{
     height: 80px;
@@ -20,16 +19,58 @@
     text-indent: 30px;
 }
 
+#page_logo_group{
+    float:right;
+    margin-right: 20px;
+}
+
+#page_logo{
+    width: 50px;
+    height: 45px;
+}
+
+#image_searches{
+    width: 320px;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#search_background{
+    margin: auto;
+    background: rgb(134, 134, 134);
+    border: 2px solid darkgray;
+    width: 78%;
+    height: 275px;
+}
 #search_box{
     margin: auto;
     background: white;
     border: 2px solid darkgray;
     font-family: "Arial";
-    width: 75%;
-    height: 250px;
+    width: 95%;
+    height: 225px;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
-#start_location{
+#search_dropdown{
     font-size: 18px;
+    font-family: "Arial";
+    margin-top: 40px;
+    margin-left: 75px;
+}
+
+#checkbox_form{
+    font-size: 18px;
+    font-family: "Arial";
+}
+
+#submit_button{
+    font-size: 20px;
+    font-family: "Arial";
+    padding: 7px;
+    width: 200px;
 }

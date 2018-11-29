@@ -11,13 +11,27 @@
     
     <!---THE HEADER HAS THE LOGO, THE PAGE TRAIL, AND THE PAGE'S TITLE--> 
     <div id="logo_circle"></div>
+    <div id="page_logo_group">
+            <img src="../images/Bed.png" id="page_logo">
+            <img src="../images/Airplane.png" id="page_logo">
+            <img src="../images/Car.png" id="page_logo">
+            <img src="../images/Apple.png" id="page_logo">
+        </div>
     <br>
     <br>
     <div id="page_trail"><href>Back Home</href> > <href>Search Flights</href></div>
     <div id="page_title">SEARCH FLIGHTS</div>
 
+
+    <div id="pictures">
+    <img src="../images/Car1.jpg" id="image_searches">
+    <img src="../images/Car1.jpg" id="image_searches">
+    <img src="../images/Car1.jpg" id="image_searches">
+    </div>
+
+    <div id="search_background">
     <div id="search_box">
-        <select id="start_location">
+        <select name="From.." id="search_dropdown">
             <option value="From...">From...</option>
             <option value="Madrid">Madrid</option>
             <option value="London">London</option>
@@ -26,7 +40,7 @@
             <option value="Barcelona">Barcelona</option>
             <option value="Lisbon">Lisbon</option>
         </select>
-        <select name="To..">
+        <select name="To.." id="search_dropdown">
             <option value="To...">To...</option>
             <option value="Madrid">Madrid</option>
             <option value="London">London</option>
@@ -35,10 +49,22 @@
             <option value="Barcelona">Barcelona</option>
             <option value="Lisbon">Lisbon</option>
         </select>
-        <form>
-            <input type="date" name="date">
-        </form>
-        <select name="Number of Travelers">
+        <select name="Date" id="search_dropdown">
+            <option value="Month">Month</option>
+            <option value="Month">January</option>
+            <option value="Month">February</option>
+            <option value="Month">March</option>
+            <option value="Month">April</option>
+            <option value="Month">May</option>
+            <option value="Month">June</option>
+            <option value="Month">July</option>
+            <option value="Month">August</option>
+            <option value="Month">September</option>
+            <option value="Month">October</option>
+            <option value="Month">November</option>
+            <option value="Month">December</option>
+        </select>
+        <select name="Number of Travelers" id="search_dropdown">
             <option value="Number of Travelers">Number of Travelers</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -46,6 +72,18 @@
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
+        <br>
+        <br>
+        <form id="checkbox_form">
+        <input type="checkbox" name="One Way" value="One Way">One Way
+        &nbsp; &nbsp; &nbsp; <input type="checkbox" name="Roundtrip" value="Round Trip">Round Trip
+        &nbsp; &nbsp; &nbsp; <input type="checkbox" name="Nonstop" value="Nonstop">Nonstop
+        &nbsp; &nbsp; &nbsp; <input type="checkbox" name="Include Airports Nearby" value="Include Airports Nearby">Include Airports Nearby
+        </form>
+        <br>
+        <br>
+        <button type="button" id="submit_button"><b>Submit</b></button>
+    </div>
     </div>
 
 
