@@ -19,13 +19,11 @@
     font-family: "Optima";
     font-size: 50px;
     font-weight: bold;
-    margin-left:30%;
-    margin-right:30%;
     background: none;
     float: inherit;
     margin-top:30px;
+    text-align: center;
 }
-
 
 #collaboration_list{
 margin-top:40px;
@@ -98,6 +96,7 @@ padding:10px;
     height:320px;
     display: flex;
     flex-direction: column-reverse;
+    overflow:scroll;
     
 }
 #row1, #row2{
@@ -106,3 +105,106 @@ padding:10px;
     clear: both;
     width: 100%;
 }
+
+.box_me {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0; 
+    background: blue;
+    border-radius: 10px;
+    color: white;
+    margin-top:5px;
+    font-size: 15px;
+    text-align: left;
+}
+
+#ratings_popUp{
+    visibility: hidden;
+    position: absolute;
+   z-index:1000;
+    left:30%;
+   border: 2px solid grey;
+   width: 500px;
+   height:375px;
+   background: white;
+   top:30%;
+}
+
+#title{
+    position: relative;
+    background:grey;
+    font-weight: bold;
+    font-size: 25px;
+    color:black;
+    top:5%;
+    text-align: center;
+    height: 55px;
+}
+
+#msg{
+    top:30%;
+    left:5%;
+    position: absolute;
+    background:grey;
+    border:1px solid black;
+    width:450px;
+    height: 230px;
+}
+
+#rating_img{
+   position: relative;
+    text-align: center;
+    bottom:5px;
+}
+
+#X{
+    left:5px;
+    top:5px;
+    position: relative;
+}
+
+#participants_popUp{
+    visibility: hidden;
+    position: absolute;
+   z-index:1000;
+   border: 2px solid grey;
+   width: 350px;
+   height:200px;
+   background: white;
+   top:30%;
+   left:37%;
+}
+.participants{
+    margin-top: 5px;
+    font-size: 15px;
+    color:black;
+    background: grey;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    text-align: center;
+}
+
+.participants:hover{
+    opacity: 0.6;
+}
+
+#p_msg{
+    margin:30px;
+    position: relative;
+}
+
+#p_title{
+    position: relative;
+    background:grey;
+    font-weight: bold;
+    font-size: 25px;
+    color:black;
+    top:5%;
+    text-align: center;
+    height: 30px;
+}
+
+#Victor_name, #Iana_name , #Cristiano_name, #Brooke_name{
+    visibility: hidden;
+} 

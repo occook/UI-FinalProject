@@ -7,14 +7,214 @@
 <meta charset="utf-8"/>
 <script>
 
-function addButton(){
-    var btn = document.createElement("BUTTON");
-    btn.style.background="blue";
-    btn.style.width="100%";
-    btn.style.height="50px";
-    document.getElementById("hotels").appendChild(btn);
+function addButton(name){
+    
+
+    if(name=="Victor"){
+        //Hotels column
+        var btn = document.createElement("BUTTON");
+        btn.innerHTML="Mercure Santo Domingo Hotel";
+        btn.style.height="45px";
+        btn.style.background="orange";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Mercure Santo Domingo Hotel   ','BLBALBALBALBA')});
+        document.getElementById("hotels").appendChild(btn);
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Mercure Santo Domingo Hotel ";
+        btn.style.height="45px";
+        btn.style.background="orange";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Mercure Santo Domingo Hotel   ','BLBALBALBALBA')});
+        document.getElementById("hotels").appendChild(btn);
+
+        //Flights column
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="EasyJet";
+        btn.style.height="45px";
+        btn.style.background="orange";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' EasyJet  ','BLBALBALBALBA')});
+        document.getElementById("flights").appendChild(btn);
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Ryanair";
+        btn.style.height="45px";
+        btn.style.background="orange";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Ryanair  ','BLBALBALBALBA')});
+        document.getElementById("flights").appendChild(btn);
+
+        //Car rentals column
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Toshiba";
+        btn.style.height="45px";
+        btn.style.background="orange";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Toshiba  ','BLBALBALBALBA')});
+        document.getElementById("carRentals").appendChild(btn);
+
+    document.getElementById("Victor_name").style.visibility="visible";
+    }
+
+    if(name=="Iana"){
+        //Hotels column
+        var btn = document.createElement("BUTTON");
+        btn.innerHTML="Blueberry Hotel";
+        btn.style.height="45px";
+        btn.style.background="green";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Blueberry Hotel  ','BLBALBALBALBA')});
+        document.getElementById("hotels").appendChild(btn);
+
+        //Flights column
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="EasyJet";
+        btn.style.height="45px";
+        btn.style.background="green";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' EasyJet  ','BLBALBALBALBA')});
+        document.getElementById("flights").appendChild(btn);
+
+        //Car rentals column
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Toshiba";
+        btn.style.height="45px";
+        btn.style.background="green";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Toshiba  ','BLBALBALBALBA')});
+        document.getElementById("carRentals").appendChild(btn);
+
+         btn = document.createElement("BUTTON");
+        btn.innerHTML="Mercedes";
+        btn.style.height="45px";
+        btn.style.background="green";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Mercedes  ','BLBALBALBALBA')});
+        document.getElementById("carRentals").appendChild(btn);
+
+        //Restaurants column
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Manana";
+        btn.style.height="45px";
+        btn.style.background="green";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Manana  ','BLBALBALBALBA')});
+        document.getElementById("restaurants").appendChild(btn);
+
+    document.getElementById("Iana_name").style.visibility="visible";
+    }
+
+    if(name=="Cristiano"){
+        //Hotels column
+        var btn = document.createElement("BUTTON");
+        btn.innerHTML="Memories Hotel";
+        btn.style.height="45px";
+        btn.style.background="brown";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Memories Hotel  ','BLBALBALBALBA')});
+        document.getElementById("hotels").appendChild(btn);
+
+        //Flights column
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Iberia";
+        btn.style.height="45px";
+        btn.style.background="brown";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Iberia ','BLBALBALBALBA')});
+        document.getElementById("flights").appendChild(btn);
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="AirCanada";
+        btn.style.height="45px";
+        btn.style.background="brown";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' AirCanada ','BLBALBALBALBA')});
+        document.getElementById("flights").appendChild(btn);
+
+        //Car rentals column
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Honda";
+        btn.style.height="45px";
+        btn.style.background="Brown";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Honda ','BLBALBALBALBA')});
+        document.getElementById("carRentals").appendChild(btn);
+
+
+    document.getElementById("Cristiano_name").style.visibility="visible";
+    }
+
+
+
+    if(name=="Brooke"){
+
+        //Car rentals column
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Bugatti";
+        btn.style.height="45px";
+        btn.style.background="Purple";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Bugatti ','BLBALBALBALBA')});
+        document.getElementById("carRentals").appendChild(btn);
+
+        //Restaurants column
+
+        btn = document.createElement("BUTTON");
+        btn.innerHTML="Manana";
+        btn.style.height="45px";
+        btn.style.background="Purple";
+        btn.className="box_me";
+        btn.addEventListener("click", function() {boxOpen(' Manana ','BLBALBALBALBA')});
+        document.getElementById("restaurants").appendChild(btn);
+
+    document.getElementById("Brooke_name").style.visibility="visible";
+    }
 }
 
+function removeParticipant(name){
+
+    if(name=="Victor"){
+
+        document.getElementById("Victor_name").style.visibility="hidden";
+    }
+    if(name=="Iana"){
+
+        document.getElementById("Iana_name").style.visibility="hidden";
+    }
+    if(name=="Cristiano"){
+
+        document.getElementById("Cristiano_name").style.visibility="hidden";
+    }
+    if(name=="Brooke"){
+
+        document.getElementById("Brooke_name").style.visibility="hidden";
+    }
+
+}
+
+function boxOpen(title, message){
+    document.getElementById("ratings_popUp").style.visibility="visible";
+    document.getElementById("title").innerHTML=title;
+    document.getElementById("msg").innerHTML=message;
+    document.getElementById("collaboration_list").style.opacity="0.5";
+}
+
+function hide_popup(){
+    document.getElementById("ratings_popUp").style.visibility="hidden";
+    document.getElementById("participants_popUp").style.visibility="hidden";
+    document.getElementById("collaboration_list").style.opacity="1";
+}
+
+function inviteParticipants(){
+    document.getElementById("participants_popUp").style.visibility="visible";
+    document.getElementById("collaboration_list").style.opacity="0.5";
+}
 </script>
 </head>
 
@@ -27,14 +227,13 @@ function addButton(){
     <div id="log_out"> <span style="padding-right:5px"> Log Out </span> <img width="20px" height="20px" style="position: relative;top:5px;"src="images/log_out.png"> </div>
     <div id="menu_bar"> <img id="menu_imgs" src="images/Bed.png"> <img id="menu_imgs" style="margin-top:5px;position: relative;top:5px;"  src="images/Airplane.png"> <img id="menu_imgs" src="images/Car.png"> <img id="menu_imgs" style="margin-top:1px" src="images/Apple.png" >  <img id="menu_imgs" style="margin-top:0px;opacity:1; position: relative;top:5px; " src="images/Collaborate.png">  </div>
     <div id="page_title" style="border:none;">COLLABORATION</div>
-
     
     <section id="collaboration_list" style="border:none"> 
        <h1 style="float:left"> My Collaborative List </h1>
-       <button id="invite_button"> Invite Friends to Collaborate </button>
+       <button id="invite_button" onclick="inviteParticipants()"> Invite Friends to Collaborate </button>
 
         <div id="row1">
-            <div class="column1" > 
+            <div class="column1" onclick="addButton('hotels','orange')"> 
                    Hotels
             </div>
             <div class="column1"> 
@@ -51,18 +250,39 @@ function addButton(){
         </div>
         <div id="row2">
             <div class="column2" id="hotels"> 
-         
+                <div class="box_me" onclick="boxOpen('Westin Palace Hotel','BLBALBALBALBA')"> 
+                    Westin Palace Hotel 
+                </div>
+                <div class="box_me" onclick="boxOpen(' Mercure Santo Domingo Hotel ','BLBALBALBALBA')"> 
+                   Mercure Santo Domingo Hotel 
+                    </div>
+    
             </div>
 
             <div class="column2" id="flights"> 
+                <div class="box_me" onclick="boxOpen(' Iberia ','BLBALBALBALBA')"> 
+                   Iberia
+                </div>
+                <div class="box_me" onclick="boxOpen(' AirEuropa ','BLBALBALBALBA')"> 
+                    AirEuropa
+                 </div>
+                 
 
+                 
             </div>
 
             <div class="column2" id="carRentals"> 
+              <div class="box_me" onclick="boxOpen(' Entreprise  ','BLBALBALBALBA')"> 
+              Entreprise 
+             </div>
+        
 
             </div>
 
             <div class="column2" id="restaurants"> 
+             <div class="box_me" onclick="boxOpen(' Iclan Brutal Bar ','BLBALBALBALBA')"> 
+              Iclan Brutal Bar
+             </div>
 
             </div>
 
@@ -72,9 +292,52 @@ function addButton(){
     <section id="participants" style="border:none;"> 
         <hr>
         <h1> Participants </h1>
-        <span style="color:blue" onclick="addButton()"> Me </span>
+        <div style="color:blue" onclick="addButton()"> Me </div>
+        <br>
+        <!--need to fix the remove -->
+        <div style="color:orange;" id="Victor_name">
+            Victor
+            <span onclick="removeParticipant('Victor')"> - </span>
+        </div>
+        <div style="color:brown;" id="Cristiano_name">
+            Cristiano
+              <span onclick="removeParticipant('Cristiano')"> - </span>
+         </div>
+         <div style="color:purple;" id="Brooke_name">
+            Brooke
+            <span onclick="removeParticipant('Brooke')"> - </span>
+         </div>
+         <div style="color:green;" id="Iana_name"> 
+                Iana
+                <span onclick="removeParticipant('Iana')"> - </span>
+            </div>
+        
     </section>
 
+
+     <!-- Popup showing the list of friends that can be invited to participate-->
+     <div id="participants_popUp">
+            <span id="X" onclick="hide_popup()"> X </span>
+            <div id="p_title"> List of Friends: </div> 
+            <div id="p_msg"> 
+            <div class="participants" onclick="addButton('Victor')" > Victor Slavov + </div>    
+            <div class="participants" onclick="addButton('Iana')"> Iana Stanley +</div>  
+            <div class="participants" onclick="addButton('Cristiano')"> Cristiano Ronaldo +</div>  
+            <div class="participants" onclick="addButton('Brooke')"> Brooke Rogers +</div>  
+            </div>
+    </div>
+
+    <!-- Popup showing the participants' ratings-->
+    <div id="ratings_popUp">
+            <span id="X" onclick="hide_popup()"> X </span>
+            <div id="title"> Title </div> 
+            <div id="rating_img">
+            <img src="images/rating.png" width="100px" >
+            </div>
+            <div id="msg"> Hi </div>
+    </div>
+
+    
 </body>
 
 </html>
