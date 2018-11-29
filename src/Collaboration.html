@@ -10,7 +10,7 @@
 function addButton(name){
     
 
-    if(name=="Victor"){
+    if(name=="Participant2"){
         //Hotels column
         var btn = document.createElement("BUTTON");
         btn.innerHTML="Mercure Santo Domingo Hotel";
@@ -55,10 +55,10 @@ function addButton(name){
         btn.addEventListener("click", function() {boxOpen(' Toshiba  ','BLBALBALBALBA')});
         document.getElementById("carRentals").appendChild(btn);
 
-    document.getElementById("Victor_name").style.visibility="visible";
+    document.getElementById("Participant2_name").style.visibility="visible";
     }
 
-    if(name=="Iana"){
+    if(name=="Participant1"){
         //Hotels column
         var btn = document.createElement("BUTTON");
         btn.innerHTML="Blueberry Hotel";
@@ -105,10 +105,10 @@ function addButton(name){
         btn.addEventListener("click", function() {boxOpen(' Manana  ','BLBALBALBALBA')});
         document.getElementById("restaurants").appendChild(btn);
 
-    document.getElementById("Iana_name").style.visibility="visible";
+    document.getElementById("Participant1_name").style.visibility="visible";
     }
 
-    if(name=="Cristiano"){
+    if(name=="Participant3"){
         //Hotels column
         var btn = document.createElement("BUTTON");
         btn.innerHTML="Memories Hotel";
@@ -146,12 +146,12 @@ function addButton(name){
         document.getElementById("carRentals").appendChild(btn);
 
 
-    document.getElementById("Cristiano_name").style.visibility="visible";
+    document.getElementById("Participant3_name").style.visibility="visible";
     }
 
 
 
-    if(name=="Brooke"){
+    if(name=="Participant4"){
 
         //Car rentals column
 
@@ -173,27 +173,27 @@ function addButton(name){
         btn.addEventListener("click", function() {boxOpen(' Manana ','BLBALBALBALBA')});
         document.getElementById("restaurants").appendChild(btn);
 
-    document.getElementById("Brooke_name").style.visibility="visible";
+    document.getElementById("Participant4_name").style.visibility="visible";
     }
 }
 
 function removeParticipant(name){
 
-    if(name=="Victor"){
+    if(name=="Participant2"){
 
-        document.getElementById("Victor_name").style.visibility="hidden";
+        document.getElementById("Participant2_name").style.visibility="hidden";
     }
-    if(name=="Iana"){
+    if(name=="Participant1"){
 
-        document.getElementById("Iana_name").style.visibility="hidden";
+        document.getElementById("Participant1_name").style.visibility="hidden";
     }
-    if(name=="Cristiano"){
+    if(name=="Participant3"){
 
-        document.getElementById("Cristiano_name").style.visibility="hidden";
+        document.getElementById("Participant3_name").style.visibility="hidden";
     }
-    if(name=="Brooke"){
+    if(name=="Participant4"){
 
-        document.getElementById("Brooke_name").style.visibility="hidden";
+        document.getElementById("Participant4_name").style.visibility="hidden";
     }
 
 }
@@ -293,24 +293,23 @@ function inviteParticipants(){
         <hr>
         <h1> Participants </h1>
         <div style="color:blue" onclick="addButton()"> Me </div>
-        <br>
-        <!--need to fix the remove -->
-        <div style="color:orange;" id="Victor_name">
-            Victor
-            <span onclick="removeParticipant('Victor')"> - </span>
-        </div>
-        <div style="color:brown;" id="Cristiano_name">
-            Cristiano
-              <span onclick="removeParticipant('Cristiano')"> - </span>
-         </div>
-         <div style="color:purple;" id="Brooke_name">
-            Brooke
-            <span onclick="removeParticipant('Brooke')"> - </span>
-         </div>
-         <div style="color:green;" id="Iana_name"> 
-                Iana
-                <span onclick="removeParticipant('Iana')"> - </span>
+        <div style="color:green;" id="Participant1_name"> 
+                Participant1
+                <span onclick="removeParticipant('Participant1')"> - </span>
             </div>
+        <div style="color:orange;" id="Participant2_name">
+                Participant2
+            <span onclick="removeParticipant('Participant2')"> - </span>
+        </div>
+        <div style="color:brown;" id="Participant3_name">
+                Participant3
+              <span onclick="removeParticipant('Participant3')"> - </span>
+         </div>
+         <div style="color:purple;" id="Participant4_name">
+                Participant4
+            <span onclick="removeParticipant('Participant4')"> - </span>
+         </div>
+         
         
     </section>
 
@@ -319,11 +318,11 @@ function inviteParticipants(){
      <div id="participants_popUp">
             <span id="X" onclick="hide_popup()"> X </span>
             <div id="p_title"> List of Friends: </div> 
-            <div id="p_msg"> 
-            <div class="participants" onclick="addButton('Victor')" > Victor Slavov + </div>    
-            <div class="participants" onclick="addButton('Iana')"> Iana Stanley +</div>  
-            <div class="participants" onclick="addButton('Cristiano')"> Cristiano Ronaldo +</div>  
-            <div class="participants" onclick="addButton('Brooke')"> Brooke Rogers +</div>  
+            <div id="p_msg">    
+            <div class="participants" onclick="addButton('Participant1')"> Participant1 +</div>  
+            <div class="participants" onclick="addButton('Participant2')" > Participant2  + </div> 
+            <div class="participants" onclick="addButton('Participant3')"> Participant3  +</div>  
+            <div class="participants" onclick="addButton('Participant4')"> Participant4  +</div>  
             </div>
     </div>
 

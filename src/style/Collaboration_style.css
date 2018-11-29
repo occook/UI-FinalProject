@@ -205,6 +205,6 @@ padding:10px;
     height: 30px;
 }
 
-#Victor_name, #Iana_name , #Cristiano_name, #Brooke_name{
+#Participant1_name, #Participant2_name, #Participant3_name , #Participant4_name{
     visibility: hidden;
 } 
