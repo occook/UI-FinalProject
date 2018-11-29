@@ -28,6 +28,7 @@
     width: 75%;
     height: 250px;
     margin-bottom: 25px;
+    overflow: hidden;
 }
 
 #image_displayed{
@@ -148,6 +149,7 @@
     width: 700px;
     font-size: 16px;
     text-align: left;
+    display
 }
 
 .object_comments{
