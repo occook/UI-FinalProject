@@ -1,14 +1,14 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="style/styling.css">  
-<link rel="stylesheet" href="style/Collaboration_style.css">        
+<link rel="stylesheet" href="../style/styling.css">
+<link rel="stylesheet" href="../style/Collaboration_style.css">
 <title> Collaboration </title>
 <meta charset="utf-8"/>
 <script>
 
 function addButton(name){
-    
+
 
     if(name=="Participant2"){
         //Hotels column
@@ -224,63 +224,63 @@ function inviteParticipants(){
     <br>
     <br>
     <div id="page_trail" style="border:none; background: none"> <href> >Back Home</href> </div>
-    <div id="log_out"> <span style="padding-right:5px"> Log Out </span> <img width="20px" height="20px" style="position: relative;top:5px;"src="images/log_out.png"> </div>
-    <div id="menu_bar"> <img id="menu_imgs" src="images/Bed.png"> <img id="menu_imgs" style="margin-top:5px;position: relative;top:5px;"  src="images/Airplane.png"> <img id="menu_imgs" src="images/Car.png"> <img id="menu_imgs" style="margin-top:1px" src="images/Apple.png" >  <img id="menu_imgs" style="margin-top:0px;opacity:1; position: relative;top:5px; " src="images/Collaborate.png">  </div>
+    <div id="log_out"> <span style="padding-right:5px"> Log Out </span> <img width="20px" height="20px" style="position: relative;top:5px;"src="../images/log_out.png"> </div>
+    <div id="menu_bar"> <img id="menu_imgs" src="../images/Bed.png"> <img id="menu_imgs" style="margin-top:5px;position: relative;top:5px;"  src="../images/Airplane.png"> <img id="menu_imgs" src="../images/Car.png"> <img id="menu_imgs" style="margin-top:1px" src="../images/Apple.png" >  <img id="menu_imgs" style="margin-top:0px;opacity:1; position: relative;top:5px; " src="../images/Collaborate.png">  </div>
     <div id="page_title" style="border:none;">COLLABORATION</div>
-    
-    <section id="collaboration_list" style="border:none"> 
+
+    <section id="collaboration_list" style="border:none">
        <h1 style="float:left"> My Collaborative List </h1>
        <button id="invite_button" onclick="inviteParticipants()"> Invite Friends to Collaborate </button>
 
         <div id="row1">
-            <div class="column1" onclick="addButton('hotels','orange')"> 
+            <div class="column1" onclick="addButton('hotels','orange')">
                    Hotels
             </div>
-            <div class="column1"> 
+            <div class="column1">
                 Flights
-                
+
             </div>
-            <div class="column1"> 
+            <div class="column1">
                 Car Rentals
-                
+
             </div>
-            <div class="column1"> 
+            <div class="column1">
                 Restaurants
             </div>
         </div>
         <div id="row2">
-            <div class="column2" id="hotels"> 
-                <div class="box_me" onclick="boxOpen('Westin Palace Hotel','BLBALBALBALBA')"> 
-                    Westin Palace Hotel 
+            <div class="column2" id="hotels">
+                <div class="box_me" onclick="boxOpen('Westin Palace Hotel','BLBALBALBALBA')">
+                    Westin Palace Hotel
                 </div>
-                <div class="box_me" onclick="boxOpen(' Mercure Santo Domingo Hotel ','BLBALBALBALBA')"> 
-                   Mercure Santo Domingo Hotel 
+                <div class="box_me" onclick="boxOpen(' Mercure Santo Domingo Hotel ','BLBALBALBALBA')">
+                   Mercure Santo Domingo Hotel
                     </div>
-    
+
             </div>
 
-            <div class="column2" id="flights"> 
-                <div class="box_me" onclick="boxOpen(' Iberia ','BLBALBALBALBA')"> 
+            <div class="column2" id="flights">
+                <div class="box_me" onclick="boxOpen(' Iberia ','BLBALBALBALBA')">
                    Iberia
                 </div>
-                <div class="box_me" onclick="boxOpen(' AirEuropa ','BLBALBALBALBA')"> 
+                <div class="box_me" onclick="boxOpen(' AirEuropa ','BLBALBALBALBA')">
                     AirEuropa
                  </div>
-                 
 
-                 
+
+
             </div>
 
-            <div class="column2" id="carRentals"> 
-              <div class="box_me" onclick="boxOpen(' Entreprise  ','BLBALBALBALBA')"> 
-              Entreprise 
+            <div class="column2" id="carRentals">
+              <div class="box_me" onclick="boxOpen(' Entreprise  ','BLBALBALBALBA')">
+              Entreprise
              </div>
-        
+
 
             </div>
 
-            <div class="column2" id="restaurants"> 
-             <div class="box_me" onclick="boxOpen(' Iclan Brutal Bar ','BLBALBALBALBA')"> 
+            <div class="column2" id="restaurants">
+             <div class="box_me" onclick="boxOpen(' Iclan Brutal Bar ','BLBALBALBALBA')">
               Iclan Brutal Bar
              </div>
 
@@ -289,11 +289,11 @@ function inviteParticipants(){
         </div>
     </section>
 
-    <section id="participants" style="border:none;"> 
+    <section id="participants" style="border:none;">
         <hr>
         <h1> Participants </h1>
         <div style="color:blue" onclick="addButton()"> Me </div>
-        <div style="color:green;" id="Participant1_name"> 
+        <div style="color:green;" id="Participant1_name">
                 Participant1
                 <span onclick="removeParticipant('Participant1')"> - </span>
             </div>
@@ -309,34 +309,34 @@ function inviteParticipants(){
                 Participant4
             <span onclick="removeParticipant('Participant4')"> - </span>
          </div>
-         
-        
+
+
     </section>
 
 
      <!-- Popup showing the list of friends that can be invited to participate-->
      <div id="participants_popUp">
             <span id="X" onclick="hide_popup()"> X </span>
-            <div id="p_title"> List of Friends: </div> 
-            <div id="p_msg">    
-            <div class="participants" onclick="addButton('Participant1')"> Participant1 +</div>  
-            <div class="participants" onclick="addButton('Participant2')" > Participant2  + </div> 
-            <div class="participants" onclick="addButton('Participant3')"> Participant3  +</div>  
-            <div class="participants" onclick="addButton('Participant4')"> Participant4  +</div>  
+            <div id="p_title"> List of Friends: </div>
+            <div id="p_msg">
+            <div class="participants" onclick="addButton('Participant1')"> Participant1 +</div>
+            <div class="participants" onclick="addButton('Participant2')" > Participant2  + </div>
+            <div class="participants" onclick="addButton('Participant3')"> Participant3  +</div>
+            <div class="participants" onclick="addButton('Participant4')"> Participant4  +</div>
             </div>
     </div>
 
     <!-- Popup showing the participants' ratings-->
     <div id="ratings_popUp">
             <span id="X" onclick="hide_popup()"> X </span>
-            <div id="title"> Title </div> 
+            <div id="title"> Title </div>
             <div id="rating_img">
-            <img src="images/rating.png" width="100px" >
+            <img src="../images/rating.png" width="100px" >
             </div>
             <div id="msg"> Hi </div>
     </div>
 
-    
+
 </body>
 
 </html>
