@@ -116,6 +116,7 @@ padding:10px;
     margin-top:5px;
     font-size: 15px;
     text-align: left;
+    vertical-align: center;
 }
 
 #ratings_popUp{
@@ -205,6 +206,12 @@ padding:10px;
     height: 30px;
 }
 
-#Participant1_name, #Participant2_name, #Participant3_name , #Participant4_name{
+#Participant1_name, #Participant2_name, #Participant3_name , #Participant4_name, #me_name{
     visibility: hidden;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding:5px;
+    color:white;
 } 
