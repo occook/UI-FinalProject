@@ -1,0 +1,165 @@
+body{
+    background: lightgray;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Arial";
+}
+
+div{
+    background: rgba(215, 215, 215, 1) ;
+    float: left;
+    border: 2px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+
+form{
+    display: inline-block;
+    float: none;
+}
+
+#secondH{
+ font-size: 24px;
+ list-style: none;
+ width: 80%;
+ text-align: center;
+ border: none;
+ display: inline-block;
+
+}
+
+header{
+  min-height: 50px;
+  border: 2px ;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: left;
+  height: 10%;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+}
+.firstA
+{
+  list-style: none;
+}
+#registrationText{
+  padding-left: 10%;
+}
+#registerbody{
+  height: 100%;
+  width: 100%;
+}
+#registerFile .linePerline{
+  float: right;
+}
+#regFormTexts{
+  font-size: 16;
+}
+#formButton{
+  width: 100%;
+  border: none;
+  float: center;
+  text-align: center;
+    background-color:  rgba(165, 165, 165);
+}
+#profilePicture{
+  float: right;
+  text-align-last: end;
+  width: 43%;
+}
+
+
+
+
+#registerFile{
+  display:inline-block;
+  float: left;
+  overflow:auto;
+  margin-left: 25%;
+  width: 50%;
+  height: 80%;
+  margin-top: 5%;
+  margin-right: 25%;
+  align: right;
+  text-align: left;
+
+}
+ul#ulxx{
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 0;
+  float: right;
+  border-spacing: 0px 0px;
+   vertical-align: middle;
+
+}
+ul#ulxx li{
+  display: inline-block;
+
+  border: none;
+  width: 33%;
+
+}
+
+#form_div {
+    border-width: 0px;
+    position: relative;
+    background: inherit;
+    background-color:  rgba(165, 165, 165);
+    border: none;
+    width: 50%;
+    height: 50%;
+    border-radius: 0px;
+    text-align: center;
+    font-family: 'ArialMT', 'Arial';
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    line-height: normal;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-image: none;
+    align-content: center;
+}
+.firstA a{
+  color: black;
+  text-decoration: none;
+}
+
+#logo_img{
+  border-width: 0px;
+position: relative;
+width: 30px;
+height: 30px;
+display: inline-block;
+}
+
+
+div {
+    display: block;
+}
+#foots{
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  bottom: 0px;
+
+}
+#footerHolder{
+  padding: 0px;
+}
+.foot{
+  justify-content: center;
+  display: inline-block;
+}
+#registerBold{
+  font-size: 24px;
+}

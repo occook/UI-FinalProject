@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style/login.css">
+<title> Login </title>
+</head>
+
+<body>
+  <script type="text/javascript" src="script/login.js"></script>
+    <div id = "logInbody">
+
+      <header id="header"> <!-- header div object  -->
+        <img src = "images/logo.png" alt = "Logo" width=68px height=46px align = "left"> <!-- logo  -->
+        <li class="firstA"> <a href="index.html"> > Back Home</a></li>
+      </header>
+          <div id = "form_div" class>
+            <b>Login</b>
+            <form id = "logInFile"  method='submit' onsubmit="helperLogIn();" name='regForm'>
+              <a id = "logInText">Email</a>
+                <input type="text" class="linePerline" name = "logInEmail" placeholder="Email" required>
+<br>
+<br>
+                <a id = "logInText">Password</a>
+                <input type="password" class="linePerline" name = "psw" placeholder="Password" pattern = '[a-z0-9]{1,8}' required>
+              <br>
+              <br>
+              <br>
+              <div id  = "subButton">
+                <input   type = 'submit' value = 'Login' formaction = 'index.html'>
+              </div>
+            </form>
+
+          </div>
+          <div id="foots"> <!-- footer div object  -->
+                <ul id = "footerHolder">
+
+                  <li class = "foot"><a href="https://www.facebook.com">Facebook</a></li> <!-- link to facebook  -->
+                  <li class = "foot"><a href>Terms & Conditions</a></li>
+                    <li class = "foot"><a href>Privacy Policy</a></li>
+                      <li class = "foot"><a href>About Us</a></li>
+                        <li class = "foot"><a href>Language</a></li>
+                </ul>
+              </div>
+    </div>
+
+
+
+</body>
+</html>
