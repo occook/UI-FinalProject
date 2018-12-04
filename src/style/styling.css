@@ -1,6 +1,7 @@
 body{
     background: lightgray;
     vertical-align: middle;
+    text-align: center;
     font-size: 14px;
     font-family: "Arial";
 }
@@ -8,10 +9,4 @@ body{
 form{
     display: block;
     float: none;
-}
-
-#menu_imgs{
-   width:30px;
-   height:30px;
-   opacity:0.5;
 }

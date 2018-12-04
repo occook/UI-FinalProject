@@ -1,0 +1,352 @@
+#page_title{
+    font-family: "Optima";
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 175px;
+}
+#logo_circle{
+    height: 80px;
+    width: 80px;
+    background-color:black;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+}
+#page_trail{
+    font-family: "Arial";
+    font-size: 17px;
+    text-align: left;
+    text-indent: 30px;
+}
+
+#object_displayed{
+    margin: auto;
+    background: white;
+    border: 2px solid darkgray;
+    font-family: "Arial";
+    width: 75%;
+    height: 250px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+#image_displayed{
+    width: 180px;
+    height: 180px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 2px solid darkgray;
+}
+
+#flight_image_displayed{
+    width: 130px;
+    height: 70px;
+    float: left;
+    margin-left: 25px;
+}
+
+#object_cost{
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+    position: absolute;
+    left: 75%;
+    padding-top: 12px;
+}
+
+#share_image{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+#star{
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    left: 75%;
+}
+
+#rateIberia{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateEuropa{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateHertz{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateAvis{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateInclan{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#rateTigre{
+    height: 40px;
+    width: 120px;
+    float: right;
+    position: absolute;
+    left: 75%;
+}
+
+#object_title{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 20px;
+    margin-top: 15px;
+}
+
+#flight_object_title{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 15px;
+    margin-top: 15px;
+}
+
+#object_address{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 20px;
+    width: 900px;
+}
+
+#object_keywords_description{
+    margin-left: 270px;
+    width: 700px;
+    font-size: 16px;
+    text-align: left;
+    display
+}
+
+.object_comments{
+    width: 400px;
+    background: rgb(236, 236, 236);
+    border: 2px solid darkgray;
+    margin: auto;
+    text-align: center;
+    padding: 13px;
+}
+
+.object_comments:hover{ /*same in both*/
+    opacity: 0.7
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.object_comments_close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.object_comments_close:hover,.object_comments_close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;}
+
+#modal_photo{
+    width:80px;
+    height:80px;
+    float: left;
+    top: 5px;
+    left: 5px;
+    border: 1px solid black;
+}
+
+#flight_modal_photo{
+    width:80px;
+    height:50px;
+    float: left;
+    top: 10px;
+    left: 5px;
+}
+
+#modal_name{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+#comments_reviews{
+    height: 30px;
+    width: 90px;
+    margin: auto;
+    position: relative;
+}
+
+#click_rate{
+    font-size: 14px;
+    color: black;
+    float: right;
+    padding: 15px;
+    padding-right: 25px;
+}
+
+#rateMercure{
+    font-size: 14px;
+    color: black;
+    float: right;
+    padding: 15px;
+    padding-right: 25px;
+}
+
+#rateWestin{
+    font-size: 14px;
+    color: black;
+    float: right;
+    padding: 15px;
+    padding-right: 25px;
+}
+
+#log_out{
+  float: right;
+  margin-right: 175px;
+}
+
+#rate_hotel{
+    height: 30px;
+    width: 120px;
+    float: right;
+    position: relative;
+    top: -25px;
+    right: 30px;
+}
+#bookWestin{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookAvis{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookHertz{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookMercure{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookEuropa{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookIberia{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookInclan{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#bookTigre{
+  float: left;
+  margin-left: 15px;
+  margin-top: -20px;
+  font-size: : 20px;
+}
+
+#share_hotel{
+  float: right;
+  margin-right: 25px;
+  margin-top: -40px;
+  font-size: : 20px;
+}
+#rate_stars{
+  font-size: 30px;
+}
+
+#favorites{
+  font-size: 40px;
+}
+
+#westinTotal{
+  color: red;
+  font size: 30px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
