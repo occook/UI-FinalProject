@@ -11,14 +11,14 @@
     <!---THE HEADER HAS THE LOGO, THE PAGE TRAIL, AND THE PAGE'S TITLE-->
     <div id="logo_circle"> <img src = ../images/fullLogo.png></div>
     <div id="page_logo_group">
-            <img src="../images/Bed.png" id="page_logo">
-            <img src="../images/Airplane.png" id="page_logo">
+            <img src="../images/Bed.png" id="page_logo" onclick = "window.location.href = 'SearchHotel.html'">
+            <img src="../images/Airplane.png" id="page_logo" onclick = "window.location.href = 'SearchFlight.html'">
             <img src="../images/Car.png" id="page_logo">
-            <img src="../images/Apple.png" id="page_logo">
+            <img src="../images/Apple.png" id="page_logo" onclick = "window.location.href = 'SearchRestaurant.html'">
         </div>
     <br>
     <br>
-    <div id="page_trail"><href>Back Home</href> > <href>Search Car Rentals</href></div>
+    <div id="page_trail"><a href='../index.html'>Back Home</a> > <href>Search Car Rentals</href></div>
     <br>
     <br>
     <br>
@@ -83,7 +83,7 @@
         </form>
         <br>
         <br>
-        <button type="button" id="submit_button"><b>Submit</b></button>
+        <button type="button" id="submit_button" onclick = "window.location.href = 'DisplayPageCars.html'"><b>Submit</b></button>
     </div>
     </div>
 
