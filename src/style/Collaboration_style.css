@@ -36,7 +36,7 @@ padding:10px;
 margin-top:10px;
 }
 
-#participants{
+#participantsSection{
 background: #A9A9A9;
 margin-top:0px;
 margin-left:20px;
@@ -54,6 +54,7 @@ padding:10px;
     border-radius: 5px;
     margin-top:10px;
     margin-right:10px;
+    box-shadow: 2px 3px grey;
 }
 
 #log_out{
@@ -117,6 +118,7 @@ padding:10px;
     font-size: 15px;
     text-align: left;
     vertical-align: center;
+    box-shadow: 2px 3px grey;
 }
 
 #ratings_popUp{
@@ -184,6 +186,7 @@ padding:10px;
     border-radius: 10px;
     padding: 3px;
     text-align: center;
+    box-shadow: 2px 3px #C8C8C8	;
 }
 
 .participants:hover{
