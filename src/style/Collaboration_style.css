@@ -36,7 +36,7 @@ padding:10px;
 margin-top:10px;
 }
 
-#participants{
+#participantsSection{
 background: #A9A9A9;
 margin-top:0px;
 margin-left:20px;
@@ -54,6 +54,7 @@ padding:10px;
     border-radius: 5px;
     margin-top:10px;
     margin-right:10px;
+    box-shadow: 2px 3px grey;
 }
 
 #log_out{
@@ -116,6 +117,8 @@ padding:10px;
     margin-top:5px;
     font-size: 15px;
     text-align: left;
+    vertical-align: center;
+    box-shadow: 2px 3px grey;
 }
 
 #ratings_popUp{
@@ -157,7 +160,7 @@ padding:10px;
     bottom:5px;
 }
 
-#X{
+.X{
     left:5px;
     top:5px;
     position: relative;
@@ -183,6 +186,7 @@ padding:10px;
     border-radius: 10px;
     padding: 3px;
     text-align: center;
+    box-shadow: 2px 3px #C8C8C8	;
 }
 
 .participants:hover{
@@ -205,6 +209,12 @@ padding:10px;
     height: 30px;
 }
 
-#Participant1_name, #Participant2_name, #Participant3_name , #Participant4_name{
+#Participant1_name, #Participant2_name, #Participant3_name , #Participant4_name, #me_name{
     visibility: hidden;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding:5px;
+    color:white;
 } 
