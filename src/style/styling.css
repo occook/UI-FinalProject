@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-body{
-    background: lightgray;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 14px;
-    font-family: "Arial";
-}
-
-form{
-    display: block;
-    float: none;
-}
-=======
 body{
     background: lightgray;
     vertical-align: middle;
@@ -54,4 +40,3 @@ a:active {
 a{
   text-decoration: none;
 }
->>>>>>> linkingPages
