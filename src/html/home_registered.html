@@ -6,12 +6,15 @@
 
 <body>
 
+<!-- This is the top section, it includes the logo, login and register buttons-->
   <div id="topSection">
     <div id="header">
+      <!-- Logo -->
       <div id = "leftLogo" class="left">
         <img src="../images/fullLogo.png" />
       </div>
 
+      <!-- Login and Register buttons -->
       <div id="topButtons">
         <div id="Login" class="right_button">
           <button onclick = "window.location.href = '../index.html'">Logout <img id="keyPNG" class="buttonPNG" src="../images/Key.png" /></button>
@@ -21,10 +24,14 @@
       <span class="clear"></span>
     </div>
 
+<!-- This is the middle section. Has a background image, search box, and search logo-->
     <div id="middleSection">
       <span id="searchLogo">
+        <!-- Pin Drop Image next to search box.-->
         <img src="../images/LocationDrop.png" />
       </span>
+
+      <!-- Search box and search button-->
       <span id="searchBox">
         <input id="searchBox" type="text" placeholder="Search for a location..." />
       </span>
@@ -34,9 +41,11 @@
     </div>
   </div>
 
+<!-- This section has 4 images, each is a link to a search page-->
 
   <div id="selections">
       <ul id="list_of_links">
+        <!-- Hotels -->
         <li id="Hotels" class="selector_list">
           <a href="SearchHotel_reg.html" class="selector_link">
             <img src="../images/Bed.png" class="selector_image"/>
@@ -45,6 +54,7 @@
               Hotels
             </p>
         </li>
+        <!-- Flights -->
         <li id="Flights" class="selector_list">
           <a href="SearchFlight_reg.html" class="selector_link">
             <img src="../images/Airplane.png" class="selector_image" />
@@ -53,6 +63,7 @@
               Flights
             </p>
         </li>
+        <!-- Cars -->
         <li id="CarRentals" class="selector_list">
           <a href="SearchCar_reg.html" class="selector_link">
             <img src="../images/Car.png" class="selector_image"/>
@@ -61,6 +72,7 @@
               Cars
             </p>
         </li>
+        <!-- Restaurants -->
         <li id="Restaurants" class="selector_list">
           <a href="SearchRestaurant_reg.html" class="selector_link">
             <img src="../images/Apple.png" class="selector_image"/>
@@ -80,7 +92,7 @@
     </ul>
   </div>
 
-
+<!-- Footer with facebook, terms, etc.-->
   <div id="footer">
     <ul id="footer_list">
       <li class="footer_list_option">
