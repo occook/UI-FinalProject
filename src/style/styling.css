@@ -25,3 +25,18 @@ form{
    height:30px;
    opacity:0.5;
 }
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
+a{
+  text-decoration: none;
+}

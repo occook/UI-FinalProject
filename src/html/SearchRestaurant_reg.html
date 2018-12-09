@@ -1,0 +1,103 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="../style/searchstyling.css">
+<title> Display Page </title>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!---THE HEADER HAS THE LOGO, THE PAGE TRAIL, AND THE PAGE'S TITLE-->
+    <div id="logo_circle"> <img src = ../images/fullLogo.png></div>
+    <div id="page_logo_group">
+            <img src="../images/Bed.png" id="page_logo" onclick = "window.location.href = 'SearchHotel_reg.html'">
+            <img src="../images/Airplane.png" id="page_logo" onclick = "window.location.href = 'SearchFlight_reg.html'">
+            <img src="../images/Car.png" id="page_logo" onclick = "window.location.href = 'SearchCar_reg.html'">
+            <img src="../images/Apple.png" id="page_logo">
+        </div>
+    <br>
+    <br>
+    <div id="page_trail"><a href='home_registered.html'>Back Home</a> > <href>Search Restaurants</href></div>
+    <br>
+    <br>
+    <br>
+    <div id="page_title">SEARCH RESTAURANTS</div>
+
+
+    <div id="pictures">
+    <img src="../images/r1.png" id="image_searches">
+    <img src="../images/r2.png" id="image_searches">
+    <img src="../images/r3.png" id="image_searches">
+    </div>
+
+    <div id="search_background">
+    <div id="search_box">
+        <select name="City.." id="search_dropdown">
+            <option value="City...">City/Location...</option>
+            <option value="Madrid">Madrid</option>
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="New York">New York</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Lisbon">Lisbon</option>
+        </select>
+        <select name="Food.." id="search_dropdown">
+            <option value="Type of Food...">Type of Food...</option>
+            <option value="Italian">Italian</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Spanish">Spanish</option>
+            <option value="American">American</option>
+            <option value="Chinese">Chinese</option>
+        </select>
+        <select name="Price" id="search_dropdown">
+          <option value="Price">Price Range...</option>
+            <option value="$">$</option>
+            <option value="$$">$$</option>
+            <option value="$$$">$$$</option>
+            <option value="$$$$">$$$$</option>
+            <option value="$$$$$">$$$$$</option>
+        </select>
+        <select name="Number of Guests" id="search_dropdown">
+            <option value="Number of Guests">Number of Guests...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <br>
+        <form id="checkbox_form">
+          <input type="checkbox" name="res" value="Allows Reservations">Allows Reservations
+          &nbsp; &nbsp; &nbsp; <input type="checkbox" name="large" value="Large Party">Large Party
+        </form>
+        <br>
+        <br>
+        <button type="button" id="submit_button" onclick = "window.location.href = 'restaurants_reg.html'"><b>Submit</b></button>
+    </div>
+    </div>
+
+    <div id="footer">
+      <ul id="footer_list">
+        <li class="footer_list_option">
+          Facebook
+        </li>
+        <li class="footer_list_option">
+          Terms and Conditions
+        </li>
+        <li class="footer_list_option">
+          Privacy Policy
+        </li>
+        <li class="footer_list_option">
+          About Us
+        </li>
+        <li class="footer_list_option">
+          Language
+        </li>
+      </ul>
+    </div>
+
+    </body>
+
+    </html>
