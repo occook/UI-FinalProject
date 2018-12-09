@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background: lightgray;
     vertical-align: middle;
@@ -10,3 +11,47 @@ form{
     display: block;
     float: none;
 }
+=======
+body{
+    background: lightgray;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: "Arial";
+}
+/*
+div{
+    background: rgb(165, 165, 165);
+    float: left;
+    border: 2px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}*/
+
+form{
+    display: block;
+    float: none;
+}
+
+.menu_imgs{
+   width:30px;
+   height:30px;
+   opacity:0.5;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+>>>>>>> linkingPages

@@ -1,0 +1,112 @@
+<html>
+<!-- updated -->
+<head>
+<link rel="stylesheet" href="../style/searchstyling.css">
+<title> Display Page </title>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <!---THE HEADER HAS THE LOGO, THE PAGE TRAIL, AND THE PAGE'S TITLE-->
+    <div id="logo_circle"> <img src = ../images/fullLogo.png></div>
+    <div id="page_logo_group">
+            <img src="../images/Bed.png" id="page_logo" onclick = "window.location.href = 'SearchHotel_reg.html'">
+            <img src="../images/Airplane.png" id="page_logo" onclick = "window.location.href = 'SearchFlight_reg.html'">
+            <img src="../images/Car.png" id="page_logo">
+            <img src="../images/Apple.png" id="page_logo" onclick = "window.location.href = 'SearchRestaurant_reg.html'">
+        </div>
+    <br>
+    <br>
+    <div id="page_trail"><a href='home_registered.html'>Back Home</a> > <href>Search Car Rentals</href></div>
+    <br>
+    <br>
+    <br>
+    <div id="page_title">SEARCH CAR RENTALS</div>
+
+
+    <div id="pictures">
+    <img src="../images/Car1.jpg" id="image_searches">
+    <img src="../images/Car2.jpeg" id="image_searches">
+    <img src="../images/Car3.jpg" id="image_searches">
+    </div>
+
+    <div id="search_background">
+    <div id="search_box">
+        <select name="Pickup.." id="search_dropdown">
+            <option value="Pickup Location...">Pickup Location...</option>
+            <option value="Madrid">Madrid</option>
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="New York">New York</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Lisbon">Lisbon</option>
+        </select>
+        <select name="Drop.." id="search_dropdown">
+            <option value="Drop-off Location...">Drop-off Location...</option>
+            <option value="Madrid">Madrid</option>
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="New York">New York</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Lisbon">Lisbon</option>
+        </select>
+        <select name="Date" id="search_dropdown">
+            <option value="Month">Month</option>
+            <option value="Month">January</option>
+            <option value="Month">February</option>
+            <option value="Month">March</option>
+            <option value="Month">April</option>
+            <option value="Month">May</option>
+            <option value="Month">June</option>
+            <option value="Month">July</option>
+            <option value="Month">August</option>
+            <option value="Month">September</option>
+            <option value="Month">October</option>
+            <option value="Month">November</option>
+            <option value="Month">December</option>
+        </select>
+        <select name="Number of Travelers" id="search_dropdown">
+            <option value="Number of Travelers">Number of Travelers</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <br>
+        <form id="checkbox_form">
+        <input type="checkbox" name="numD" value="2+ Drivers">2+ Drivers
+        &nbsp; &nbsp; &nbsp; <input type="checkbox" name="airportP" value="Airport Pickup/Dropoff">Airport Pickup/Dropoff
+        &nbsp; &nbsp; &nbsp; <input type="checkbox" name="under" value="Driver Under 25">Driver Under 25
+        </form>
+        <br>
+        <br>
+        <button type="button" id="submit_button" onclick = "window.location.href = 'cars_reg.html'"><b>Submit</b></button>
+    </div>
+    </div>
+
+    <div id="footer">
+      <ul id="footer_list">
+        <li class="footer_list_option">
+          Facebook
+        </li>
+        <li class="footer_list_option">
+          Terms and Conditions
+        </li>
+        <li class="footer_list_option">
+          Privacy Policy
+        </li>
+        <li class="footer_list_option">
+          About Us
+        </li>
+        <li class="footer_list_option">
+          Language
+        </li>
+      </ul>
+    </div>
+
+    </body>
+
+    </html>
